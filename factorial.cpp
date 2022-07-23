@@ -1,7 +1,7 @@
 /**
  * file: factorial.cpp
  * type: C++ (source file)
- * date: 01_MAY_2022
+ * date: 22_JULY_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -20,18 +20,18 @@ int compute_factorial_of_N_using_iteration(int N, std::ostream & output);
  * Assume that N is an integer value and that output is an output stream object.
  * For each function call, print an algebriac expression which represents N factorial.
  * 
- * 0! := 1. // base case: when N is not a natural number or when N is larger than MAXIMUM_N.
- * N! := N * (N - 1)! // recursive case: when N is a natural number no larger than MAXIMUM_N.
+ * 0! := 1. // base case: when N is smaller than 1 or when N is larger than MAXIMUM_N.
+ * N! := N * (N - 1)! // recursive case: when N is no smaller than 1 and when N is no larger than MAXIMUM_N.
  */
 int compute_factorial_of_N_using_recursion(int N, std::ostream & output)
 {
-	// base case: if N is less than 1 or if N is larger than MAXIMUM_N, then return 1.
+	// base case: if N is less than 1 or if N is greater than MAXIMUM_N, then return 1.
 	if ((N < 1) || (N > MAXIMUM_N))
 	{
 		output << "\n\nfactorial(" << N << ") = 1. // base case";
 		return 1;
 	}
-	// recursive case: if N is a natural number no larger than MAXIMUM_N, then return N multiplied by the (N - 1) factorial.
+	// recursive case: if N is not less than 1 and if N is not greater than MAXIMUM_N, then return N multiplied by (N - 1) factorial.
 	else
 	{
 		output << "\n\nfactorial(" << N << ") = " << N << " * factorial(" << N - 1 << "). // recursive case" ;
