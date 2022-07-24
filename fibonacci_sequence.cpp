@@ -65,7 +65,7 @@ int compute_Nth_fibonacci_sequence_term_using_recursion(int N, std::ostream & ou
      */
     if ((N < 2) || (N > MAXIMUM_N))
     {
-        N = 0;
+        N = (N == 0) ? N : 1; // If N is not equal to 0, then set N to 1.
         C += 1;
         output << "\n\nfibonacci(" << N << ") = 1. // base case";
         return 1;
