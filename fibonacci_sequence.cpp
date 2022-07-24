@@ -124,7 +124,7 @@ int compute_Nth_fibonacci_sequence_term_using_iteration(int N, std::ostream & ou
         B += C;
         output << "\n\nfibonacci(" << i << ") = ";
         output << B << " = fibonacci(" << i - 2 << ") + fibonacci(" << i - 1 << ") = ";
-        output << A << " + " << B ;
+        output << A << " + " << C;
         output << ". // i := " << i << ".";
         i += 1; 
     }
