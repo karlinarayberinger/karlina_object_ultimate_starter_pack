@@ -28,7 +28,7 @@ int compute_Nth_fibonacci_sequence_term_using_iteration(int N, std::ostream & ou
  * 
  * If this function is going to be called more than one time from inside of the same
  * scope in which C is declared, C will need to be reset to 0 before each of those
- * function calls is implented to ensure that C stores the correct number of time this 
+ * function calls is implemented to ensure that C stores the correct number of time this 
  * function calls itself during a particular function call from within C's program scope.
  * 
  * For each function call, print an algebraic expression which represents the Nth term of the Fibonacci Sequence.
