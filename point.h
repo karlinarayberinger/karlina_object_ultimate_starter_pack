@@ -44,8 +44,8 @@ public:
     POINT(const POINT & point); // copy constructor
     int get_X(); // getter method
     int get_Y(); // getter method
-    bool set_X(); // setter method
-    bool set_Y(); // setter method
+    bool set_X(int X); // setter method
+    bool set_Y(int Y); // setter method
     double get_distance_from(POINT & point); // getter method
     double get_slope_of_line_to(POINT & point); // getter method
     void print(std::ostream & output = std::cout); // descriptor method
