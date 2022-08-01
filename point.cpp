@@ -1,7 +1,7 @@
 /**
  * file: point.cpp
  * type: C++ (source file)
- * date: 30_JULY_2022
+ * date: 31_JULY_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -118,7 +118,7 @@ bool POINT::set_X(int X)
  */
 bool POINT::set_Y(int Y)
 {
-    if ((Y >= MINIMUM_Y) && (X <= MAXIMUM_Y)) 
+    if ((Y >= MINIMUM_Y) && (Y <= MAXIMUM_Y)) 
     {
         this -> Y = Y;
         return true;
