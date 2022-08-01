@@ -1,4 +1,3 @@
-
 /**
  * @file: polygon.cpp
  * @type: C++ (source file)
