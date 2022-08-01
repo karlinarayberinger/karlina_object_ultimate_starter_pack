@@ -23,7 +23,7 @@ void unit_test_0(std::ostream & output)
     output << "\nTRIANGLE triangle;";
     output << "\ntriangle.print(output);";
     TRIANGLE triangle;
-    triangle.print(output);
+    // triangle.print(output);
 }
 
 // Unit Test # 1: TRIANGLE class default constructor, TRIANGLE class overloaded ostream operator method, TRIANGLE getter methods, and TRIANGLE class destructor.
@@ -134,12 +134,14 @@ int main()
      */
     unit_test_0(std::cout);
     unit_test_0(file);
+    /*
     unit_test_1(std::cout);
     unit_test_1(file);
     unit_test_2(std::cout);
     unit_test_2(file);
     unit_test_3(std::cout);
     unit_test_3(file);
+    */
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
