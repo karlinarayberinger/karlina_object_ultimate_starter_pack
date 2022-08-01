@@ -21,6 +21,7 @@ void unit_test_8(std::ostream & output);
 void unit_test_9(std::ostream & output);
 void unit_test_10(std::ostream & output);
 void unit_test_11(std::ostream & output);
+void unit_test_12(std::ostream & output);
 
 // Unit Test # 0: POINT class default constructor, POINT class print method, and POINT class destructor.
 void unit_test_0(std::ostream & output) 
@@ -211,6 +212,66 @@ void unit_test_11(std::ostream & output)
     output << "\npoint.get_slope_of_line_to(point) = " << point.get_slope_of_line_to(point) << ". // point refers to exactly one object";
 }
 
+// Unit Test # 12: POINT class normal constructor, POINT class setter methods, POINT class overloaded ostream operator method, and POINT class destructor.
+void unit_test_12(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 12: POINT class normal constructor, POINT class setter methods, POINT class overloaded ostream operator method, and POINT class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nPOINT point = POINT(3, 3);";
+    output << "\noutput << point;";
+    POINT point = POINT(3, 3);
+    output << point;
+    output << "\nbool status = point.set_X(-1000);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    bool status = point.set_X(-1000);
+    output << std::endl << status << std::endl;
+    output << point;
+    output << "\nstatus = point.set_X(-999);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    status = point.set_X(-999);
+    output << std::endl << status << std::endl;
+    output << point;
+    output << "\nstatus = point.set_Y(-1000);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    status = point.set_Y(-1000);
+    output << std::endl << status << std::endl;
+    output << point;
+    output << "\nstatus = point.set_Y(-999);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    status = point.set_Y(-999);
+    output << std::endl << status << std::endl;
+    output << point;
+    output << "\nstatus = point.set_X(1000);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    status = point.set_X(1000);
+    output << std::endl << status << std::endl;
+    output << point;
+    output << "\nstatus = point.set_X(999);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    status = point.set_X(999);
+    output << std::endl << status << std::endl;
+    output << point;
+    output << "\nstatus = point.set_Y(1000);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    status = point.set_Y(1000);
+    output << std::endl << status << std::endl;
+    output << point;
+    output << "\nstatus = point.set_Y(999);";
+    output << "\noutput << std::endl << status << std::endl;";
+    output << "\noutput << point;";
+    status = point.set_Y(999);
+    output << std::endl << status << std::endl;
+    output << point;
+}
+
 /** program entry point */
 int main()
 {
@@ -273,6 +334,8 @@ int main()
     unit_test_10(file);
     unit_test_11(std::cout);
     unit_test_11(file);
+    unit_test_12(std::cout);
+    unit_test_12(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
