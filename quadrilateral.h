@@ -60,7 +60,7 @@ protected:
      * 
      * (Assume that point_0, point_1, point_2, and point_3 each represent valid POINT instances).
      * 
-     * If each of the three POINT objects represent unique coordinate pairs, then return true.
+     * If each of the four POINT objects represent unique coordinate pairs, then return true.
      * 
      * Otherwise, return false.
      */
