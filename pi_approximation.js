@@ -467,7 +467,7 @@ function initialize_application() {
 	const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
 	let seconds_remaining_span, red_pixel_count_span, blue_pixel_count_span, pi_approximation_span, timestamp, message, console_div;
 	try {
-		message = "The web page, pi_approximation.html, was loaded by the web browser at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
+		message = "The initialize_application() function was called at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
 		console.log(message);
 		hide_reset_button();
 		unhide_start_button();
@@ -478,11 +478,12 @@ function initialize_application() {
 		red_pixel_count_span = document.getElementById("red_pixel_count_span");
 		blue_pixel_count_span = document.getElementById("blue_pixel_count_span");
 		pi_approximation_span = document.getElementById("pi_approximation_span");
-		seconds_remaining_span.innerHTML = 3600; //3600
+		console_div = document.getElementById("timestamped_events_log");
+		seconds_remaining_span.innerHTML = 3600; 
 		red_pixel_count_span.innerHTML = 0;
 		blue_pixel_count_span.innerHTML = 0;
 		pi_approximation_span.innerHTML = 0;
-		console_div.innerHTML = p0 + message + p1;
+		console_div.innerHTML += p0 + message + p1;
 	}
 	catch(exception) {
 		console.log("An exception to expected functioning occurred in initialize_page(): " + exception);
@@ -540,7 +541,6 @@ function start_monte_carlo_simulation() {
 	const message = "The Monte Carlo simulation started at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
 	console.log(message);
 	document.getElementById("timestamped_events_log").innerHTML += p0 + message + p1;
-	console_div.innerHTML = macro_message + p0 + message + p1;
 	initialize_application();
 	hide_start_button();
 	simulation = setInterval( function() { plot_random_pixel_on_square_canvas(simulation); }, 1000); // The plot_random_pixel_on_square_canvas(simulation) function is called once every 1000 milliseconds until the timer interval is cleared.
