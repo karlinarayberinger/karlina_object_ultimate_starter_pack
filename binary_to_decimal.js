@@ -20,7 +20,7 @@ function initialize_application() {
     try {
         const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
         let light_bulb_off = '<' + 'img src="light_bulb_off.png" width="60"' + '>', i = 0;
-        const message = "The Monte Carlo simulation started at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
+        const message = "The initialize_application() function was called at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
         console.log(message);
         document.getElementById("output").innerHTML = p0 + message + p1;
         for (i = 0; i < 8; i += 1) {
@@ -231,7 +231,8 @@ function switch_0() {
  */
 function binary_to_decimal() {
     try {
-        let time_stamp = new Date(), i = 0, k = 0, binary_digits_string = "", decimal_output_number = 0, power_of_two = 1, arithmetic_steps = "", p0 = '<' + 'p' + '>', p1 = '<' + 'p' + '/' + '>', s0 = '<' + 'span class="console"' + '>', s1 = '<' + '/' + 'span' + '>';
+        const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>', s0 = '<' + 'span class="console"' + '>', s1 = '<' + '/' + 'span' + '>';
+        let i = 0, k = 0, binary_digits_string = "", decimal_output_number = 0, power_of_two = 1, arithmetic_steps = "";
         console.log("The BINARY_TO_DECIMAL button was clicked at time: " + time_stamp + ".");
         for (i = 0; i < 8; i += 1) document.getElementById("switch_" + i).style.display = "none";
         document.getElementById("binary_to_decimal_button").style.display = "none";
