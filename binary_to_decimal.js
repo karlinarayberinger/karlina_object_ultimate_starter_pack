@@ -275,6 +275,14 @@ function binary_to_decimal() {
         arithmetic_steps += p0 + parseInt(binary_digits_string[5]) * 4 + " + " + p1;
         arithmetic_steps += p0 + parseInt(binary_digits_string[6]) * 2 + " + " + p1;
         arithmetic_steps += p0 + parseInt(binary_digits_string[7]) * 1 + "." + p1;
+        console.log("parseInt(binary_digits_string[0]) * 128 = " + parseInt(binary_digits_string[0]) * 128);
+        console.log("parseInt(binary_digits_string[1]) * 64 = " + parseInt(binary_digits_string[1]) * 64);
+        console.log("parseInt(binary_digits_string[2]) * 32 = " + parseInt(binary_digits_string[2]) * 32);
+        console.log("parseInt(binary_digits_string[3]) * 16 = " + parseInt(binary_digits_string[3]) * 16);
+        console.log("parseInt(binary_digits_string[4]) * 8 = " + parseInt(binary_digits_string[4]) * 8);
+        console.log("parseInt(binary_digits_string[5]) * 4 = " + parseInt(binary_digits_string[5]) * 4);
+        console.log("parseInt(binary_digits_string[6]) * 2 = " + parseInt(binary_digits_string[6]) * 2);
+        console.log("parseInt(binary_digits_string[7]) * 1 = " + parseInt(binary_digits_string[7]) * 1);
         document.getElementById("output").innerHTML += arithmetic_steps;
     }
     catch(exception) {
