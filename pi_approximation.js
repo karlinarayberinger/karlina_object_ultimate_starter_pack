@@ -478,8 +478,7 @@ function initialize_application() {
 		red_pixel_count_span = document.getElementById("red_pixel_count_span");
 		blue_pixel_count_span = document.getElementById("blue_pixel_count_span");
 		pi_approximation_span = document.getElementById("pi_approximation_span");
-		console_div = document.getElementById("timestamped_events_log");
-		seconds_remaining_span.innerHTML = 3600;
+		seconds_remaining_span.innerHTML = 3600; //3600
 		red_pixel_count_span.innerHTML = 0;
 		blue_pixel_count_span.innerHTML = 0;
 		pi_approximation_span.innerHTML = 0;
