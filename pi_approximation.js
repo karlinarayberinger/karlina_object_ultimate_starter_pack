@@ -464,11 +464,10 @@ function unhide_reset_button() {
  * Set the value enclosed by the span element whose id is "pi_approximation" to 0.
  */
 function initialize_application() {
-	const p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+	const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
 	let seconds_remaining_span, red_pixel_count_span, blue_pixel_count_span, pi_approximation_span, timestamp, message, console_div;
 	try {
-		timestamp = new Date();
-		message = "The web page, pi_approximation.html, was loaded by the web browser at time: " + timestamp + "."
+		message = "The web page, pi_approximation.html, was loaded by the web browser at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
 		console.log(message);
 		hide_reset_button();
 		unhide_start_button();
@@ -501,8 +500,8 @@ function initialize_application() {
  * such that each plot_random_pixel_on_square_canvas(simulation) call is temporarlly spaced by one second.
  */
 function finish_simulation() {
-	const timestamp = new Date(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
-	let message = "The Monte Carlo simulation ended at time: "  + timestamp + "."
+	const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+	let message = "The Monte Carlo simulation ended at time: "  + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
 	console.log(message);
 	document.getElementById("timestamped_events_log").innerHTML += p0 + message + p1;
 }
