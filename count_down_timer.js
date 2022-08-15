@@ -184,18 +184,27 @@ function decrement_timer_display_by_one_second(simulation) {
  */
 function start() {
 	try {
+		// Display the time at which the START button was clicked on the web page and in the browser console.
 		let message = ("The start() button was clicked at time: " + time_stamp()), N = 0, simulation = undefined;
 		console.log(message);
+		document.getElementById("program_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
+
 		// Disable the start() button by hiding it until the simulation is finished.
 		document.getElementById("timer_start_button" ).style.display = "none";
+
 		N = parseInt(get_selected_menu_option_value("nonnegative_integer_interval_selector"));
+
 		// Ensure that N is an Number type datum, integer, and value no smaller than 30 and no larger than 999.
 		N = ((typeof N !== "number") || (N !== Math.floor(N)) || (N < 30) || (N > 999)) ? 30 : N;
+
+		// Display the selected menu option on the web page and in the browser console.
 		message = ("The selected value of N is " + N + ".");
 		console.log(message);
 		document.getElementById("program_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
+
 		// Set the timer interval to N seconds and begin the incremental count down to 0 (in increments 1 second in length).
 		document.getElementById("nonnegative_integer_display").innerHTML = N;
+
 		// Begin updating the timer display once per second (and 1 second is equal to 1000 milliseconds).
 		simulation = setInterval( function() { decrement_timer_display_by_one_second(simulation); }, 1000);
 	}
