@@ -232,8 +232,10 @@ function switch_0() {
 function binary_to_decimal() {
     try {
         const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>', s0 = '<' + 'span class="console"' + '>', s1 = '<' + '/' + 'span' + '>';
-        let i = 0, k = 0, binary_digits_string = "", decimal_output_number = 0, power_of_two = 1, arithmetic_steps = "";
-        console.log("The BINARY_TO_DECIMAL button was clicked at time: " + time_stamp + ".");
+        let i = 0, k = 0, binary_digits_string = "", decimal_output_number = 0, power_of_two = 1, arithmetic_steps = "", message = "";
+        message = "The BINARY_TO_DECIMAL button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
+        console.log(message);
+        document.getElementById("output").innerHTML += p0 + message + p1;
         for (i = 0; i < 8; i += 1) document.getElementById("switch_" + i).style.display = "none";
         document.getElementById("binary_to_decimal_button").style.display = "none";
         for (i = 7; i > -1; i -= 1) binary_digits_string += document.getElementById("bit_" + i).innerHTML;
@@ -273,7 +275,7 @@ function binary_to_decimal() {
         arithmetic_steps += p0 + parseInt(binary_digits_string[2]) * 4 + " + " + p1;
         arithmetic_steps += p0 + parseInt(binary_digits_string[1]) * 2 + " + " + p1;
         arithmetic_steps += p0 + parseInt(binary_digits_string[0]) * 1 + "." + p1;
-        document.getElementById("output").innerHTML = arithmetic_steps;
+        document.getElementById("output").innerHTML += arithmetic_steps;
     }
     catch(exception) {
         console.log("An exception to expected functioning occurred during the runtime of the JavaScript function named binary_to_decimal(): " + exception);
