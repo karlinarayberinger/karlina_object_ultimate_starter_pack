@@ -62,8 +62,8 @@ function approximate_square_root(input) {
  * Determine whether or not a given input value is a valid planar point object (as defined in the generate_random_planar_point() function).
  * 
  * @param {Object} input is assumed to be an object with the following properties: 
- * 				   {Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
- *                 {Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ * 			{Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ *        		{Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
  * 
  * @return {Boolean} true if input satisfies the conditions defined above; false otherwise.
  */
@@ -90,12 +90,12 @@ function is_point(input) {
  * distance_formula(A, B) = square_root( ((A.x - B.x) ^ 2) + ((A.y - B.y) ^ 2) )
  * 
  * @param {Object} A is assumed to be an object with the following properties: 
- * 				   {Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
- *                 {Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ * 			{Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ *             		{Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
  *
  * @param {Object} B is assumed to be an object with the following properties: 
- * 				   {Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
- *                 {Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ * 			{Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ *              	{Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
  * 
  * @return {Number} the length of the shortest path between planar points A and B.
  */
