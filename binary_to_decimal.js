@@ -1,3 +1,4 @@
+
 /**
  * file: binary_to_decimal.js
  * type: JavaScript
@@ -266,14 +267,14 @@ function binary_to_decimal() {
         arithmetic_steps += p0 + "(" + s0 + binary_digits_string[5] + s1 + " * 4) +" + p1;
         arithmetic_steps += p0 + "(" + s0 + binary_digits_string[6] + s1 + " * 2) +" + p1;
         arithmetic_steps += p0 + "(" + s0 + binary_digits_string[7] + s1 + " * 1) = " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[7]) * 128 + " + " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[6]) * 64 + " + " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[5]) * 32 + " + " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[4]) * 16 + " + " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[3]) * 8 + " + " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[2]) * 4 + " + " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[1]) * 2 + " + " + p1;
-        arithmetic_steps += p0 + parseInt(binary_digits_string[0]) * 1 + "." + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[0]) * 128 + " + " + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[1]) * 64 + " + " + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[2]) * 32 + " + " + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[3]) * 16 + " + " + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[4]) * 8 + " + " + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[5]) * 4 + " + " + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[6]) * 2 + " + " + p1;
+        arithmetic_steps += p0 + parseInt(binary_digits_string[7]) * 1 + "." + p1;
         document.getElementById("output").innerHTML += arithmetic_steps;
     }
     catch(exception) {
