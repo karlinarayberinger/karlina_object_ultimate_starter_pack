@@ -18,8 +18,9 @@
  */
 function initialize_application() {
     try {
-        let time_stamp = new Date(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>', message = "", light_bulb_off = '<' + 'img src="light_bulb_off.png" width="60"' + '>', i = 0;
-        message = "The web page, binary_to_decimal.html, was loaded at time: " + time_stamp + ".";
+        const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+        let light_bulb_off = '<' + 'img src="light_bulb_off.png" width="60"' + '>', i = 0;
+        const message = "The Monte Carlo simulation started at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
         console.log(message);
         document.getElementById("output").innerHTML = p0 + message + p1;
         for (i = 0; i < 8; i += 1) {
