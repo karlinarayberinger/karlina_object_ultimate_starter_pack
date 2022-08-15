@@ -232,7 +232,7 @@ function switch_0() {
 function binary_to_decimal() {
     try {
         const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>', s0 = '<' + 'span class="console"' + '>', s1 = '<' + '/' + 'span' + '>';
-        let i = 0, k = 0, binary_digits_string = "", decimal_output_number = 0, power_of_two = 1, arithmetic_steps = "", message = "";
+        let i = 0, binary_digits_string = "", decimal_output_number = 0, decimal_term_value = 0, power_of_two = 1, arithmetic_steps = "", message = "";
         message = "The BINARY_TO_DECIMAL button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
         console.log(message);
         document.getElementById("output").innerHTML += p0 + message + p1;
@@ -241,11 +241,9 @@ function binary_to_decimal() {
         for (i = 7; i > -1; i -= 1) binary_digits_string += document.getElementById("bit_" + i).innerHTML;
         console.log("The input binary digit sequence is " + binary_digits_string + ".");
         for (i = 7; i > -1; i -= 1) {
-            for (k = i; k > 0; k -= 1) {
-                if (k == 0) power_of_two = 1;
-                power_of_two *= 2;
-            }
-            decimal_output_number += parseInt(binary_digits_string[i]) * power_of_two;
+            decimal_term_value = parseInt(binary_digits_string[i]) * power_of_two;
+            console.log("decimal_term_value := " + decimal_term_value + ".");
+            decimal_output_number += decimal_value;
             console.log("parseInt(binary_digits_string[i]) * power_of_two) = " + parseInt(binary_digits_string[i]) + " *  " + power_of_two + ".");
             console.log("parseInt(binary_digits_string[i]) + " *  " + power_of_two) = " + parseInt(binary_digits_string[i]) * power_of_two + ".");
             power_of_two = 1;
