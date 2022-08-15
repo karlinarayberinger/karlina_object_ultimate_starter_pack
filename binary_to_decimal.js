@@ -1,3 +1,4 @@
+
 /**
  * file: binary_to_decimal.js
  * type: JavaScript
@@ -83,8 +84,8 @@ function binary_switch(N) {
  * Otherwise, the 7th bit will be set to 0 and the 7th light bulb state will be set to "OFF".
  */
 function switch_7() { 
-    let time_stamp = new Date();
-    console.log("The switch_7 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_7 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(7); 
 }
 
@@ -102,8 +103,8 @@ function switch_7() {
  * Otherwise, the 6th bit will be set to 0 and the 6th light bulb state will be set to "OFF".
  */
 function switch_6() { 
-    let time_stamp = new Date();
-    console.log("The switch_6 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_6 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(6); 
 }
 
@@ -121,8 +122,8 @@ function switch_6() {
  * Otherwise, the 5th bit will be set to 0 and the 5th light bulb state will be set to "OFF".
  */
 function switch_5() { 
-    let time_stamp = new Date();
-    console.log("The switch_5 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_5 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(5); 
 }
 
@@ -140,8 +141,8 @@ function switch_5() {
  * Otherwise, the 4th bit will be set to 0 and the 4th light bulb state will be set to "OFF".
  */
 function switch_4() { 
-    let time_stamp = new Date();
-    console.log("The switch_4 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_4 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(4); 
 }
 
@@ -159,8 +160,8 @@ function switch_4() {
  * Otherwise, the 3rd bit will be set to 0 and the 3rd light bulb state will be set to "OFF".
  */
 function switch_3() { 
-    let time_stamp = new Date();
-    console.log("The switch_3 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_3 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(3); 
 }
 
@@ -178,8 +179,8 @@ function switch_3() {
  * Otherwise, the 2nd bit will be set to 0 and the 2nd light bulb state will be set to "OFF".
  */
 function switch_2() { 
-    let time_stamp = new Date();
-    console.log("The switch_2 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_2 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(2); 
 }
 
@@ -197,8 +198,8 @@ function switch_2() {
  * Otherwise, the 1st bit will be set to 0 and the 1st light bulb state will be set to "OFF".
  */
 function switch_1() { 
-    let time_stamp = new Date();
-    console.log("The switch_1 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_1 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(1); 
 }
 
@@ -218,8 +219,8 @@ function switch_1() {
  * Otherwise, the 0th bit will be set to 0 and the 0th light bulb state will be set to "OFF".
  */
 function switch_0() { 
-    let time_stamp = new Date();
-    console.log("The switch_0 button was clicked at time: " + time_stamp + ".");
+    const time_point = Date.now();
+    console.log("The switch_0 button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).");
     binary_switch(0); 
 }
 
