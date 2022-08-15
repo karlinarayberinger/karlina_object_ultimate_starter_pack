@@ -501,7 +501,7 @@ function initialize_application() {
  */
 function finish_simulation() {
 	const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
-	let message = "The Monte Carlo simulation ended at time: "  + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
+	const message = "The Monte Carlo simulation ended at time: "  + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
 	console.log(message);
 	document.getElementById("timestamped_events_log").innerHTML += p0 + message + p1;
 }
