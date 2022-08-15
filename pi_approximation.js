@@ -470,7 +470,6 @@ function initialize_application() {
 		timestamp = new Date();
 		message = "The web page, pi_approximation.html, was loaded by the web browser at time: " + timestamp + "."
 		console.log(message);
-
 		hide_reset_button();
 		unhide_start_button();
 		clear_canvas();
@@ -502,8 +501,10 @@ function initialize_application() {
  * such that each plot_random_pixel_on_square_canvas(simulation) call is temporarlly spaced by one second.
  */
 function finish_simulation() {
-	let end_time = new Date();
-	console.log("The Monte Carlo simulation ended at time: " + end_time + ".");
+	const timestamp = new Date(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+	let message = "The Monte Carlo simulation ended at time: "  + timestamp + "."
+	console.log(message);
+	document.getElementById("timestamped_events_log").innerHTML += p0 + message + p1;
 }
 
 /**
