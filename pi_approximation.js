@@ -266,12 +266,12 @@ function decrement_seconds_remaining() {
  * The HTML canvas (which is a square area whose side lengths are each 400 pixels) is formatted such that the upper left corner has an x-coordinate of 0 and a y-coordinate of 0. 
  * 
  * @param {Object} point is assumed to be an object with the following properties: 
- * 				   {Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
- *                 {Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ * 			{Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ *             		{Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
  *
  * @return {Object} an object whose properties are as follows:
- *                  {Number} x is assumed to be an integer no smaller than 0 and no larger than 400.
- *                  {Number} y is assumed to be an integer no smaller than 0 and no larger than 400.
+ *               	{Number} x is assumed to be an integer no smaller than 0 and no larger than 400.
+ *               	{Number} y is assumed to be an integer no smaller than 0 and no larger than 400.
  */
 function convert_point_to_pixel(point) {
 	let pixel = { x : 0, y : 0 }; // initialize pixel to represent the top left corner of the HTML5 canvas.
@@ -294,8 +294,8 @@ function convert_point_to_pixel(point) {
  * If that pixel-sized "dart" is plotted farther than 200 pixels away from the center of the square canvas, then color the "dart" blue.
  * 
  * @param {Object} point is assumed to be an object with the following properties: 
- * 				   {Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
- *                 {Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ * 				{Number} x_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
+ *             			{Number} y_coordinate is assumed to be an integer no smaller than -200 and no larger than 200.
  */
 function plot_point_on_html_canvas(point) {
 	let canvas = undefined, context = undefined, pixel = {}, distance_from_origin = 0;
