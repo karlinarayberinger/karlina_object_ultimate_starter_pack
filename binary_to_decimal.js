@@ -242,7 +242,7 @@ function binary_to_decimal() {
         console.log("The input binary digit sequence is " + binary_digits_string + ".");
         for (i = 7; i > -1; i -= 1) {
             for (k = i; k > 0; k -= 1) {
-                if (i == 0) power_of_two = 1;
+                if (k == 0) power_of_two = 1;
                 power_of_two *= 2;
             }
             decimal_output_number += parseInt(binary_digits_string[i]) * power_of_two;
