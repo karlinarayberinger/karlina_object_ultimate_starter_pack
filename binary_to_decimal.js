@@ -241,7 +241,7 @@ function binary_to_decimal() {
         for (i = 7; i > -1; i -= 1) binary_digits_string += document.getElementById("bit_" + i).innerHTML;
         console.log("The input binary digit sequence is " + binary_digits_string + ".");
         for (i = 7; i > -1; i -= 1) {
-            decimal_term_value = parseInt(binary_digits_string[i]) * Math.pow(2,i);
+            decimal_term_value = parseInt(binary_digits_string[i]) * Math.pow(2, 7 - i);
             decimal_output_number += decimal_term_value;
             
         }
