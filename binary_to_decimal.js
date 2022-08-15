@@ -1,4 +1,3 @@
-
 /**
  * file: binary_to_decimal.js
  * type: JavaScript
