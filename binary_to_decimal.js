@@ -232,7 +232,7 @@ function switch_0() {
 function binary_to_decimal() {
     try {
         const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>', s0 = '<' + 'span class="console"' + '>', s1 = '<' + '/' + 'span' + '>';
-        let i = 0, binary_digits_string = "", decimal_output_number = 0, decimal_term_value = 0, power_of_two = 1, arithmetic_steps = "", message = "";
+        let i = 0, binary_digits_string = "", decimal_output_number = 0, decimal_term_value = 0,  arithmetic_steps = "", message = "";
         message = "The BINARY_TO_DECIMAL button was clicked at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
         console.log(message);
         document.getElementById("output").innerHTML += p0 + message + p1;
