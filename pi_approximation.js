@@ -536,11 +536,12 @@ function plot_random_pixel_on_square_canvas(simulation) {
  * Use the setInterval function to space plot_random_pixel_on_square_canvas(simulation) function calls apart by one second.
  */
 function start_monte_carlo_simulation() {
-	const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+	const time_point = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>', console_div = document.getElementById("timestamped_events_log");
 	let simulation; // timer interval handler
-	let message = "The Monte Carlo simulation started at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
+	let message = "The Monte Carlo simulation started at time: " + time_point + " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).", macro_message = "";
 	console.log(message);
-	document.getElementById("timestamped_events_log").innerHTML += p0 + message + p1;
+	macro_message = console_div.innerHTML;
+	console_div.innerHTML = macro_message + p0 + message + p1;
 	initialize_application();
 	hide_start_button();
 	simulation = setInterval( function() { plot_random_pixel_on_square_canvas(simulation); }, 1000); // The plot_random_pixel_on_square_canvas(simulation) function is called once every 1000 milliseconds until the timer interval is cleared.
