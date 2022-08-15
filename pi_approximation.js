@@ -259,7 +259,7 @@ function decrement_seconds_remaining() {
 }
 
 /**
- * Translate a coordiante pair from its Cartesian point representation to its HTML canvas coordinate pair.
+ * Translate a coordinate pair from its Cartesian point representation to its HTML canvas coordinate pair.
  * 
  * The Cartesian point coordinates treat the center of the HTML canvas as the origin of the Cartesian plane (i.e. where the x-coordinate is 0 and where the y-coordinate is 0).
  * 
