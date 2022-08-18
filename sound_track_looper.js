@@ -22,10 +22,8 @@ function generate_time_stamp() {
  * @return {String} a natural number of options for a select menu.
  */
 function get_menu_options() {
-	let HTML_string = ('<' + 'option value="frogs_croaking.mp3" selected' + '>' + 'frogs_croaking.mp3' + '<' + '/' + 'option' + '>');
-	HTML_string += ('<' + 'option value="birdsong_at_morning.mp3"' + '>' + 'birdsong_at_morning.mp3' + '<' + '/' + 'option' + '>');
-	HTML_string += ('<' + 'option value="creek_water_churning.mp3"' + '>' + 'creek_water_churning.mp3' + '<' + '/' + 'option' + '>');
-	HTML_string += ('<' + 'option value="drumz_10_may_2022.mp3"' + '>' + 'drumz_10_may_2022.mp3' + '<' + '/' + 'option' + '>');
+	let HTML_string = ('<' + 'option value="frogs_croaking_24_august_2021.mp3" selected' + '>' + 'frogs_croaking_24_august_2021.mp3' + '<' + '/' + 'option' + '>');
+	HTML_string += ('<' + 'option value="drumz_karbytes_10_july_2022.mp3"' + '>' + 'drumz_karbytes_10_july_2022.mp3' + '<' + '/' + 'option' + '>');
 	return HTML_string;
 }
 
