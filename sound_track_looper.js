@@ -81,7 +81,7 @@ function load_web_page() {
  * Start playing the selected sound file for an indefinite number of times and incrementing the number of seconds elapsed and the number of audio loops played.
  * If a runtime error occurs, use the try-catch block to perform exception handling by displaying a relevant web console message.
  */
-function start_audio_track_looper() {
+function start_sound_track_looper() {
 	try {
 		let message = "The button was clicked at time: " + generate_time_stamp();
 		let elapsed_seconds_display = document.getElementById("seconds_elapsed_display");
