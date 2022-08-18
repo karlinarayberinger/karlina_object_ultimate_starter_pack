@@ -1,0 +1,16 @@
+/**
+ * file: bordered_container.css
+ * type: Cascading-Style-Sheet
+ * author: Karlina Ray Beringer
+ * date: 17_AUGUST_2022
+ * license: PUBLIC_DOMAIN
+ */
+
+.bordered_container {
+    border-color: #00ff00;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    padding:  10px;
+    margin: 10px;
+}
