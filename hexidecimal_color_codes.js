@@ -1,4 +1,3 @@
-
 /**
  * file: hexidecimal_color_codes.js
  * type: JavaScript
