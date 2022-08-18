@@ -117,6 +117,6 @@ function start_sound_track_looper() {
 		);
 	}
 	catch(e) {
-		console.log("An exception to normal functioning occurred during the runtime of start_audio_track_looper(): " + e);
+		console.log("An exception to normal functioning occurred during the runtime of start_sound_track_looper(): " + e);
 	}
 }
