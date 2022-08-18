@@ -16,11 +16,11 @@
  */
 function initialize_application() {
     try {
-        const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+        const time_stamp = Date.now(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
         let message = "The web page, hexidecimal_color_codes.html, was loaded at time: " + time_stamp + ".";
         console.log(message);
-        document.getElementById("output").innerHTML = p0 + message + p1;
-        document.getElementById("time_stamped_events").innerHTML = p0 + "This sentence will disappear when the GENERATE button is clicked." + p1;
+        document.getElementById("time_stamped_events").innerHTML = p0 + message + p1;
+        document.getElementById("output").innerHTML = p0 + "This sentence will disappear when the GENERATE button is clicked." + p1;
     }
     catch(exception) {
         console.log("An exception to normal functioning occurred during the runtime of initialize_application(): " + exception);
@@ -314,11 +314,11 @@ function generate_html_string_for_table_cell(color_skew_specification) {
  */
 function generate_color_grid() {
     try {        
-        const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', '<' + '/' + 'p' + '>';
+        const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
         let message = "The GENERATE button was clicked at time: " + time_stamp + ".";
         let selected_color_skew = "", output_div_content = "";
         console.log(message);
-        document,getElementById("time_stamped_events").innerHTML += p0 + message + p1;
+        document.getElementById("time_stamped_events").innerHTML += p0 + message + p1;
         selected_color_skew = get_selected_menu_option_value("color_skew_menu");
         output_div_content = '<' + 'p' + '>';
         output_div_content += "selected_color_skew := " + selected_color_skew + ".";
