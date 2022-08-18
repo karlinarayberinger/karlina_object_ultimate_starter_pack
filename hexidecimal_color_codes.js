@@ -248,11 +248,11 @@ function convert_from_hexidecimal_to_decimal(hexidecimal_sequence) {
  *                              gradients is a sequence of two hexidecimal digits which represents a decimal 
  *                              integer no smaller than 0 and no larger than 255)).
  * 
- * - red_value: a decimal intenger no smaller than 0 and no larger than 255 which "RR" represents.
+ * - red_value: a decimal integer no smaller than 0 and no larger than 255 which "RR" represents.
  * 
- * - green_value: a decimal intenger no smaller than 0 and no larger than 255 which "GG" represents.
+ * - green_value: a decimal integer no smaller than 0 and no larger than 255 which "GG" represents.
  * 
- * - blue_value: a decimal intenger no smaller than 0 and no larger than 255 which "BB" represents.
+ * - blue_value: a decimal integer no smaller than 0 and no larger than 255 which "BB" represents.
  * 
  * If color_skew_specification is "red", the decimal number which "RR" represents will be 
  * larger than or equal to the decimal number represented by "GG" and larger or equal to 
