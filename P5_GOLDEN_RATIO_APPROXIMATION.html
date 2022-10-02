@@ -4,8 +4,8 @@
 <p><span style="background:#ffff00;">The C++ program featured in this tutorial web page generates an approximation of the Golden Ratio by dividing the Nth term of the <a style="background:#000000;color:#00ff00;" href="https://karlinaobject.wordpress.com/fibonacci_sequence/" target="_blank" rel="noopener">FIBONACCI_SEQUENCE</a> by the (N &#8211; 1)th term of the Fibonacci Sequence.</span></p>
 <p><strong><em>To view hidden text inside of the preformatted text boxes below, scroll horizontally.</em></strong></p>
 <pre>golden_ratio := (1 + square_root(2)) / 5. 
-fibonacci(i) := 1. // i is not a natural number larger than or equal to 2.
-fibonacci(k) := fibonacci(k - 2) + fibonacci(k - 1). // k is a natural number larger than or equal to 2.
+fibonacci(i) := 1. // i is an integer which is smaller than 2.
+fibonacci(k) := fibonacci(k - 2) + fibonacci(k - 1). // k is a natural number which is larger than or equal to 2.
 golden_ratio_approximation(N) := fibonacci(N) / fibonacci(N - 1).  // N is an integer.
 </pre>
 <hr />
