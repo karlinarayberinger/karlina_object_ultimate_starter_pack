@@ -90,7 +90,7 @@ void bubble_sort(int * A, int S)
  * The returned array, B, will have a total of T elements.
  * 
  * The returned array will logically resemble a two-dimensional grid 
- * whose left-column values are all nonnegative integers no larger than T
+ * whose left-column values are each nonnegative integers no larger than T
  * which are arranged in ascending order starting at the first element of B (i.e. B[0])
  * and ending at the last element of B (i.e. B[T - 1])
  * and whose right-column values are each nonnegative integers no larger than S.
