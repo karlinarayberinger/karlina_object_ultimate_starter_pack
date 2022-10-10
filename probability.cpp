@@ -60,13 +60,17 @@ void bubble_sort(int * A, int S)
  * Return a pointer to a two-dimensional array which represents the number of times each unique 
  * int-type value of array A occurs inside of array A.
  * 
- * (The maximum number of times a unique integer value may occur inside of array A is S).
+ * (The maximum number of times a unique integer value may occur as a data element of array A is S).
  * 
- * (The minimum number of times a unique integer value may occur inside of array A is 0).
+ * (The minimum number of times a unique integer value may occur as a data element of array A is 0).
+ * 
+ * (The maximum number of times a unique integer value may occur as a data element of array B is T).
+ * 
+ * (The minimum number of times a unique integer value may occur as a data element of array B is 0).
  * 
  * The returned array is a dynamically allocated variable (i.e. a variable which is 
  * instantiated during program runtime instead of during program compile time 
- * (which means that the amount of memory to allocate to array A is unknown
+ * (which means that the amount of memory to allocate to array A (and, hence, to array B) is unknown
  * until the program user inputs the total number of elements to include in array A during program runtime)).
  * 
  * Assume that there are at least S consecutive int-sized chunks of memory allocated to array A
@@ -158,7 +162,7 @@ int get_largest_array_value(int * A, int S)
  * (and that S is a natural number no larger than MAXIMUM_S).
  * 
  * Assume that T is a natural number no larger than MAXIMUM_T 
- * (and that each of the values of A are no smaller than 0 and no larger than (T - 1)).
+ * (and that each of the values of A is no smaller than 0 and no larger than (T - 1)).
  * 
  * The maximum number of histogram rows to print is T (i.e. the number unique states which each element of A may represent).
  * If T histogram rows are printed by the time this function terminates, then each element of A stores a unique int-type value.
