@@ -219,9 +219,9 @@ int main()
 
     // Print the declare the int pointer named A to the command line terminal.
     // Print the declare the int pointer named A to the file output stream.
-    std::cout << "\n\n// Declare a pointer to an int-sized block of memory.";
+    std::cout << "\n// Declare a pointer to an int-sized block of memory.";
     std::cout << "\nint * A;";
-    fout << "\n// Declare a pointer to an int-sized block of memory.";
+    fout << "\n\n// Declare a pointer to an int-sized block of memory.";
     fout << "\nint * A;";
 
     // Print the declare the double int pointer named B to the command line terminal.
