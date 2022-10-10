@@ -217,9 +217,19 @@ int main()
      */
     fout.open("probability_output.txt");
 
+    // Print an opening message to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+    std::cout << "\nStart Of Program";
+    std::cout << "\n--------------------------------";
+
+    // Print an opening message to the file output stream.
+    fout << "--------------------------------";
+    fout << "\nStart Of Program";
+    fout << "\n--------------------------------";
+
     // Print the declare the int pointer named A to the command line terminal.
     // Print the declare the int pointer named A to the file output stream.
-    std::cout << "\n// Declare a pointer to an int-sized block of memory.";
+    std::cout << "\n\n// Declare a pointer to an int-sized block of memory.";
     std::cout << "\nint * A;";
     fout << "\n\n// Declare a pointer to an int-sized block of memory.";
     fout << "\nint * A;";
@@ -469,6 +479,16 @@ int main()
 
     // Terminate the file output stream. Close the file so that program data is saved as lines of plain text in that file.
     fout.close();
+
+    // Print a closing message to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+    std::cout << "\nEnd Of Program";
+    std::cout << "\n--------------------------------\n\n";
+
+    // Print a closing message to the file output stream.
+    fout << "\n\n--------------------------------";
+    fout << "\nEnd Of Program";
+    fout << "\n--------------------------------";
 
     // program exit point
     return 0;
