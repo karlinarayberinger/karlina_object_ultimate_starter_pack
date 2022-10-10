@@ -1,7 +1,7 @@
 /**
  * file: probability.cpp
  * type: C++ (source file)
- * date: 31_DECEMBER_2021
+ * date: 10_OCTOBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -9,11 +9,11 @@
 /**
  * Preprocessing Directives
  */
-#include < iostream > // standard input and output operations (command line terminal and keyboard)
-#include < fstream > // file input and output operations (text file generation)
-#include < stdio.h > // library which contains NULL macro
-#include < stdlib.h > // library for srand() and rand() functions
-#include < time.h > // library for time() function
+#include <iostream> // standard input and output operations (command line terminal and keyboard)
+#include <fstream> // file input and output operations (text file generation)
+#include <stdio.h> // library which contains NULL macro
+#include <stdlib.h> // library for srand() and rand() functions
+#include <time.h> // library for time() function
 #define MAXIMUM_S 1000 // upper limit constant for values of S
 #define MAXIMUM_T 1000 // upper limit constant for values of T
 
@@ -30,7 +30,7 @@ void print_histogram(int * A, int S, int T, std::ostream & output);
 /**
  * Use the Bubble Sort sorting algorithm to arrange the elements of array A in ascending order.
  * 
- * Note that, even though this function returns nothing, the array pointer which is passed in as a function parameter is updated.
+ * Note that, even though this function returns no value, the array which the pointer variable points to is updated.
  * 
  * Assume that there are at least S consecutive int-sized chunks of memory allocated to array A
  * (and that S is a natural number no larger than MAXIMUM_S).
