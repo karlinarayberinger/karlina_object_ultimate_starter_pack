@@ -379,12 +379,12 @@ int main()
         // Print a description of the ith element of array B to the command line terminal.
         // Print a description of the ith element of array B to the file output stream.
         std::cout << "\n------------------------------------------------";
-        std::cout << "\nFrequency of " << B[i][0] << " in A is " << B[i][1] << ".";
+        std::cout << "\nFrequency of value " << B[i][0] << " in array A is " << B[i][1] << ".";
         std::cout << "\n------------------------------------------------";
         std::cout << "\nB[" << i << "][0] := " << B[i][0] << ". (memory address of B[" << i << "][0] is " << &B[i][0] << ").";
         std::cout << "\nB[" << i << "][1] := " << B[i][1] << ". (memory address of B[" << i << "][1] is " << &B[i][1] << ").";
         fout << "\n------------------------------------------------";
-        fout << "\nFrequency of " << B[i][0] << " in A is " << B[i][1] << ".";
+        fout << "\nFrequency of value " << B[i][0] << " in array A is " << B[i][1] << ".";
         fout << "\n------------------------------------------------";
         fout << "\nB[" << i << "][0] := " << B[i][0] << ". (memory address of B[" << i << "][0] is " << &B[i][0] << ").";
         fout << "\nB[" << i << "][1] := " << B[i][1] << ". (memory address of B[" << i << "][1] is " << &B[i][1] << ").";
