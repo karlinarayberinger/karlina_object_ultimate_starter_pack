@@ -58,12 +58,16 @@ void bubble_sort(int * A, int S)
 
 /**
  * Return a pointer to a two-dimensional array which represents the number of times each unique 
- * int-type value of array A occurs.
+ * int-type value of array A occurs inside of array A.
+ * 
+ * (The maximum number of times a unique integer value may occur inside of array A is S).
+ * 
+ * (The minimum number of times a unique integer value may occur inside of array A is 0).
  * 
  * The returned array is a dynamically allocated variable (i.e. a variable which is 
  * instantiated during program runtime instead of during program compile time 
- * (which means that the amount of memory to allocate to program variables is unknown
- * until the program user inputs an array size during program runtime)).
+ * (which means that the amount of memory to allocate to array A is unknown
+ * until the program user inputs the total number of elements to include in array A during program runtime)).
  * 
  * Assume that there are at least S consecutive int-sized chunks of memory allocated to array A
  * (and that S is a natural number no larger than MAXIMUM_S).
@@ -420,7 +424,14 @@ int main()
     std::cout << "\n\nget_largest_array_value(A, S) := " << get_largest_array_value(A, S) << ".";
     fout << "\n\nget_largest_array_value(A, S) := " << get_largest_array_value(A, S) << ".";
 
-    // Print a histogram which visually depicts the frequency distribution of unique integer values in A to the command line.
+    // Print a description about how much data each of the dynamocally allocated arrays represents to the command line terminal.
+    std::cout << "\n\n* * *";
+    std::cout << "\nsizeof(int) := " << sizeof(int) << " byte(s).";
+    std::cout << "\nThe number of bytes of contiguous memory allocated to array A is: (sizeof(int) * S) = (" << sizeof(int) << " * " << S << ") = " << sizeof(int) * S << ".";
+    std::cout << "\nThe number of bytes of contiguous memory allocated to array B is: (sizeof(int) * T) = (" << sizeof(int) << " * " << T << ") = " << sizeof(int) * T << ".";
+    std::cout << "\n* * *";
+
+    // Print a histogram which visually depicts the frequency distribution of unique integer values in A to the command line terminal.
     // Print a histogram which visually depicts the frequency distribution of unique integer values in A to the file output stream.
     // print_histogram(A, S, T, std::cout); // WARNING: Calling the print_histogram function twice in a row using different ostream operators tends to cause the second ostream stream to be populated with garbage data. For that reason, the print_hisogram function call which uses std::cout as the ostream parameter is commented out so that the file output is not polluted. 
     std::cout << "\n\nCheck the output file to see a histogram of frequencies for each of the unique integer values stored in array A.";
