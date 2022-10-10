@@ -221,7 +221,7 @@ int main()
     // Print the declare the int pointer named A to the file output stream.
     std::cout << "\n\n// Declare a pointer to an int-sized block of memory.";
     std::cout << "\nint * A;";
-    fout << "\n\n// Declare a pointer to an int-sized block of memory.";
+    fout << "\n// Declare a pointer to an int-sized block of memory.";
     fout << "\nint * A;";
 
     // Print the declare the double int pointer named B to the command line terminal.
@@ -425,6 +425,13 @@ int main()
     fout << "\n\nget_largest_array_value(A, S) := " << get_largest_array_value(A, S) << ".";
 
     // Print a description about how much data each of the dynamocally allocated arrays represents to the command line terminal.
+    std::cout << "\n\n* * *";
+    std::cout << "\nsizeof(int) := " << sizeof(int) << " byte(s).";
+    std::cout << "\nThe number of bytes of contiguous memory allocated to array A is: (sizeof(int) * S) = (" << sizeof(int) << " * " << S << ") = " << sizeof(int) * S << ".";
+    std::cout << "\nThe number of bytes of contiguous memory allocated to array B is: (sizeof(int) * T) = (" << sizeof(int) << " * " << T << ") = " << sizeof(int) * T << ".";
+    std::cout << "\n* * *";
+
+    // Print a description about how much data each of the dynamocally allocated arrays represents to the file output stream.
     std::cout << "\n\n* * *";
     std::cout << "\nsizeof(int) := " << sizeof(int) << " byte(s).";
     std::cout << "\nThe number of bytes of contiguous memory allocated to array A is: (sizeof(int) * S) = (" << sizeof(int) << " * " << S << ") = " << sizeof(int) * S << ".";
