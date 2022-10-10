@@ -481,9 +481,6 @@ int main()
     fout << "\nfor (int i = 0; i < T; i += 1) delete [] B[i];";
     fout << "\ndelete [] B;\n";
 
-    // Terminate the file output stream. Close the file so that program data is saved as lines of plain text in that file.
-    fout.close();
-
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
     std::cout << "\nEnd Of Program";
@@ -493,6 +490,9 @@ int main()
     fout << "\n\n--------------------------------";
     fout << "\nEnd Of Program";
     fout << "\n--------------------------------";
+
+    // Terminate the file output stream. Close the file so that program data is saved as lines of plain text in that file.
+    fout.close();
 
     // program exit point
     return 0;
