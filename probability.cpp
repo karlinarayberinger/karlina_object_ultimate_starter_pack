@@ -442,11 +442,11 @@ int main()
     std::cout << "\n* * *";
 
     // Print a description about how much data each of the dynamocally allocated arrays represents to the file output stream.
-    std::cout << "\n\n* * *";
-    std::cout << "\nsizeof(int) := " << sizeof(int) << " byte(s).";
-    std::cout << "\nThe number of bytes of contiguous memory allocated to array A is: (sizeof(int) * S) = (" << sizeof(int) << " * " << S << ") = " << sizeof(int) * S << ".";
-    std::cout << "\nThe number of bytes of contiguous memory allocated to array B is: (sizeof(int) * T) = (" << sizeof(int) << " * " << T << ") = " << sizeof(int) * T << ".";
-    std::cout << "\n* * *";
+    fout << "\n\n* * *";
+    fout << "\nsizeof(int) := " << sizeof(int) << " byte(s).";
+    fout << "\nThe number of bytes of contiguous memory allocated to array A is: (sizeof(int) * S) = (" << sizeof(int) << " * " << S << ") = " << sizeof(int) * S << ".";
+    fout << "\nThe number of bytes of contiguous memory allocated to array B is: (sizeof(int) * T) = (" << sizeof(int) << " * " << T << ") = " << sizeof(int) * T << ".";
+    fout << "\n* * *";
 
     // Print a histogram which visually depicts the frequency distribution of unique integer values in A to the command line terminal.
     // Print a histogram which visually depicts the frequency distribution of unique integer values in A to the file output stream.
