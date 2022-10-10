@@ -482,12 +482,12 @@ int main()
     fout << "\ndelete [] B;\n";
 
     // Print a closing message to the command line terminal.
-    std::cout << "\n\n--------------------------------";
+    std::cout << "\n--------------------------------";
     std::cout << "\nEnd Of Program";
     std::cout << "\n--------------------------------\n\n";
 
     // Print a closing message to the file output stream.
-    fout << "\n\n--------------------------------";
+    fout << "\n--------------------------------";
     fout << "\nEnd Of Program";
     fout << "\n--------------------------------";
 
