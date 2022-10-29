@@ -10,7 +10,7 @@
 /* preprocessing directives */
 #include <iostream> // command line input and output
 #include <fstream> // file input and output
-#define MAXIMUM_N 1000 // constant which represents maximum N value
+#define MAXIMUM_N 65 // constant which represents maximum N value
 
 /* function prototypes */
 unsigned long long int compute_factorial_of_N_using_iteration(int N);
@@ -73,15 +73,15 @@ long double e(int N, std::ostream & output)
 	// Set the intial value which is stored in i to zero.
 	int i = 0;
 
-	// Declare a pointer to an long double type variable named T.
-	long double * T;
+	// Declare a pointer to an unsigned long long int type variable named T.
+	unsigned long long int * T;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to one. 
 	N = ((N < 0) || (N > MAXIMUM_N)) ? 1 : N;
 
-	// Allocate N contiguous long double sized chunks of memory to an array for storing N floating-point values.
+	// Allocate N contiguous unsigned long long int sized chunks of memory to an array for storing N floating-point values.
 	// Store the memory address of the first element of that array in T.
-	T = new long double [N];
+	T = new unsigned long long int [N];
 
 	// Print "memory_address_of(T) := {memory_address_of(T)}." to the output stream.
 	output << "\n\nmemory_address_of(T) := " << &T << ".";
@@ -90,7 +90,7 @@ long double e(int N, std::ostream & output)
 	output << "\n\nT := " << T << ".\n";
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order: 
-	// print the memory address of the ith element of the long double type array represented by T to the output stream.
+	// print the memory address of the ith element of the unsigned long long int type array represented by T to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
 		// Print "T[{i}] := {memory_address_of(T[i])}." to the output stream.
@@ -101,7 +101,7 @@ long double e(int N, std::ostream & output)
 	output << '\n';
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
-	// set value of the ith element of the int type array represented by T to (N - i) and
+	// set value of the ith element of the unsigned long long int type array represented by T to (N - i) and
 	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
@@ -116,7 +116,7 @@ long double e(int N, std::ostream & output)
 	output << '\n';
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
-	// set value of the ith element of the int type array represented by T to (N - i)! and
+	// set value of the ith element of the unsigned long long int type array represented by T to (N - i)! and
 	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
