@@ -28,17 +28,18 @@ long double e(int N, std::ostream & output)
 	long double A = 0.0;
 
 	// Declare an int type variable (i.e. a variable for storing integer values) named _N. 
-	// Set the intial value which is stored in _N to zero.
+	// Set the intial value which is stored in _N to one.
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored in i to zero.
-	int _N = 0, i = 0;
+	int _N = 1, i = 0;
 
 	// Declare a pointer to an int type variable named T.
 	int * T;
 
-	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to one.
-	// Otherwise, set _N to zero (and set N to _N).
+	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to one. 
 	_N = ((N < 0) || (N > MAXIMUM_N)) ? 1 : N;
+
+	// Set the value of N to the value of _N.
 	N = _N;
 
 	// Allocate N contiguous int sized chunks of memory to an array for storing N integer values.
