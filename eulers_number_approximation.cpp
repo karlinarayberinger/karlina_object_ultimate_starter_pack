@@ -46,7 +46,8 @@ long double e(int N, std::ostream & output)
 	// Store the memory address of the first element of that array in T.
 	T = new int [N];
 
-	output << "\n\nA := ";
+	// Print "memory_address_of(A) := {T}." to the output stream.
+	output << "\n\nmemory_address_of(A) := " << T << ".";
 
 	while (i <= N) 
 	{
