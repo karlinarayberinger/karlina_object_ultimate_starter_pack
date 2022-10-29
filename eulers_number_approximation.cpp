@@ -34,6 +34,7 @@ long double e(int N, std::ostream & output)
 	int _N = 1, i = 0;
 
 	// Declare a pointer to an int type variable named T.
+	// Declare a pointer to an int type variable named P.
 	int * T;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to one. 
@@ -47,7 +48,15 @@ long double e(int N, std::ostream & output)
 	T = new int [N];
 
 	// Print "memory_address_of(A) := {T}." to the output stream.
-	output << "\n\nmemory_address_of(A) := " << T << ".";
+	output << "\n\nmemory_address_of(T) := " << T << ".\n";
+
+	// For each integer value represented by i starting at 0 and ending at N in and in ascending order, 
+	// Print the memory address of the ith element of the array to the output stream.
+	for (i = 0; i < N; i += 1) 
+	{
+		// Print "T[{i}] := {T[i]}." to the output stream.
+		output << "\nT[" << i << "] := " << &T[i] << ".";
+	}
 
 	while (i <= N) 
 	{
