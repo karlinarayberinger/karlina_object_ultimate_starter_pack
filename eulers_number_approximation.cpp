@@ -21,6 +21,10 @@ int e(int N, std::ostream & output);
  */
 int e(int N)
 {
+	// If N is smaller than zero or if N is 0 larger than MAXIMUM_N, set N to 0.
+	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+
+	// Exit the function.
 	return 0;
 }
 
