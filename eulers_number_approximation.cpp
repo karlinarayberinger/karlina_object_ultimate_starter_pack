@@ -33,9 +33,8 @@ long double e(int N, std::ostream & output)
 	// Set the intial value which is stored in i to zero.
 	int _N = 1, i = 0;
 
-	// Declare a pointer to an int type variable named T.
-	// Declare a pointer to an int type variable named P.
-	int * T;
+	// Declare a pointer to an long double type variable named T.
+	long double * T;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to one. 
 	_N = ((N < 0) || (N > MAXIMUM_N)) ? 1 : N;
@@ -43,15 +42,18 @@ long double e(int N, std::ostream & output)
 	// Set the value of N to the value of _N.
 	N = _N;
 
-	// Allocate N contiguous int sized chunks of memory to an array for storing N integer values.
+	// Allocate N contiguous long double sized chunks of memory to an array for storing N floating-point values.
 	// Store the memory address of the first element of that array in T.
-	T = new int [N];
+	T = new long double [N];
 
-	// Print "memory_address_of(A) := {memory_address_of(T)}." to the output stream.
-	output << "\n\nmemory_address_of(T) := " << T << ".\n";
+	// Print "memory_address_of(T) := {memory_address_of(T)}." to the output stream.
+	output << "\n\nmemory_address_of(T) := " << &T << ".\n";
+
+	// Print "T := {T}." to the output stream.
+	output << "\n\nT := " << T << ".\n";
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order: 
-	// print the memory address of the ith element of the int type array represented by T to the output stream.
+	// print the memory address of the ith element of the long double type array represented by T to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
 		// Print "T[{i}] := {memory_address_of(T[i])}." to the output stream.
@@ -90,8 +92,8 @@ int main()
 	std::ofstream file;
 
 	// Declare an int type variable (i.e. a variable for storing integer values) named N. 
-	// Set the intial value which is stored in N to zero.
-	int N = 0;
+	// Set the intial value which is stored in N to one.
+	int N = 1;
 
     // Set the number of digits of floating-point numbers which are printed to the command line terminal to 100 digits.
     std::cout.precision(100);
@@ -119,26 +121,26 @@ int main()
 	file << "\nSTART OF PROGRAM";
 	file << "\n--------------------------------";
 
-	// Print "Enter a nonnegative integer value which is no larger than {MAXIMUM_N}: " to the command line terminal.
-	std::cout << "\n\nEnter a nonnegative integer value which is no larger than " << MAXIMUM_N << ": ";
+	// Print "Enter a natural number which is no larger than {MAXIMUM_N}: " to the command line terminal.
+	std::cout << "\n\nEnter a natural number which is no larger than " << MAXIMUM_N << ": ";
 
 	// Scan the command line terminal for the most recent keyboard input value.
 	std::cin >> N;
 
-	// Print "Enter a nonnegative integer value which is no larger than {MAXIMUM_N}: " to the command line terminal.
-	std::cout << "\n\nEnter a nonnegative integer value which is no larger than " << MAXIMUM_N << ": ";
+	// Print "Enter a natural number which is no larger than {MAXIMUM_N}: " to the command line terminal.
+	std::cout << "\n\nEnter a natural number which is no larger than " << MAXIMUM_N << ": ";
 
-	// Print "Enter a nonnegative integer value which is no larger than {MAXIMUM_N}: " to the file output stream.
-	file << "\n\nEnter a nonnegative integer value which is no larger than " << MAXIMUM_N << ": ";
+	// Print "Enter a natural number which is no larger than {MAXIMUM_N}: " to the file output stream.
+	file << "\n\nEnter a natural number which is no larger than " << MAXIMUM_N << ": ";
 
-	// Print "The value which was entered to store inside of the int type variable named N is {N}." to the command line terminal.
-	std::cout << "\nThe value which was entered to store inside of the int type variable named N is " << N << ".";
+	// Print {N} to the command line terminal.
+	std::cout << N;
 
-	// Print "The value which was entered to store inside of the int type variable named N is {N}." to the file output stream.
-	file << "\n\nThe value which was entered to store inside of the int type variable named N is " << N << ".";
+	// Print {N} to the file output stream.
+	file << N;
 
-	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to zero.
-	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to one.
+	N = ((N < 0) || (N > MAXIMUM_N)) ? 1 : N;
 
 	// Print "N := {N}." to the command line terminal.
 	std::cout << "\n\nN := " << N << ".";
