@@ -2,9 +2,11 @@
 START OF PROGRAM
 --------------------------------
 
-The value which was entered for N is 100.
+The value which was entered for N is 1000.
 
-N := 100.
+N := 1000.
+
+memory_address_of(N) := 0x7ffd3f4bef2c.
 
 --------------------------------
 END OF PROGRAM

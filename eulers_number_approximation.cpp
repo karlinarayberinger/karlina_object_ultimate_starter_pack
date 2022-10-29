@@ -62,6 +62,12 @@ int main()
 	// Print "N := {N}." to the file output stream.
 	file << "\n\nN := " << N << ".";
 
+	// Print "memory_address_of(N) := {N}." to the command line terminal.
+	std::cout << "\n\nmemory_address_of(N) := " << &N << ".";
+
+	// Print "memory_address_of(N):= {N}." to the file output stream.
+	file << "\n\nmemory_address_of(N) := " << &N << ".";
+
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";
 	std::cout << "\nEND OF PROGRAM";
