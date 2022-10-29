@@ -21,11 +21,15 @@ int e(int N, std::ostream & output);
  */
 int e(int N)
 {
+	// Declare an int type variable (i.e. a variable for storing integer values) named A. 
+	// Set the intial value which is stored inside of A to zero.
+	int A = 0;
+
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to zero.
 	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
 
-	// Exit the function.
-	return 0;
+	// Return the value which A represents.
+	return A;
 }
 
 /* program entry point */
@@ -34,8 +38,8 @@ int main()
 	// Declare a file output stream object named file.
 	std::ofstream file;
 
-	// Declare an int-type variable (i.e. a variable for storing integer values) named N. 
-	// Set the intial value stored in N to zero.
+	// Declare an int type variable (i.e. a variable for storing integer values) named N. 
+	// Set the intial value which is stored inside of N to zero.
 	int N = 0;
 
 	/**
