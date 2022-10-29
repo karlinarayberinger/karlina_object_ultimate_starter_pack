@@ -19,7 +19,7 @@ long double e(int N, std::ostream & output);
  * Generate an approximation of the the mathematical constant named e (i.e. Euler’s Number) 
  * by adding (1/N) to (1/(N – 1)) to (1/(N – 2)) to … (1/(N – (N – 1)) such that N is a natural number.
  * 
- * The value returned by this function is a double-precision floating type value.
+ * The value returned by this function is a floating-point number value.
  */
 long double e(int N, std::ostream & output)
 {
