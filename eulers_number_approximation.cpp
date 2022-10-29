@@ -11,12 +11,11 @@
 #include <iostream> // command line input and output
 #include <fstream> // file input and output
 #include <cmath> // power function (e.g. 8 = pow(2,3))
-#define MAXIMUM_N 100 // constant which represents maximum N value
+#define MAXIMUM_N 65 // constant which represents maximum N value
 
 /* function prototypes */
 unsigned long long int compute_factorial_of_N_using_iteration(int N);
 long double e(int N, std::ostream & output);
-long double better_e(int N, std::ostream & output);
 
 /**
  * Compute N factorial using an iterative algorithm.
@@ -84,6 +83,9 @@ long double e(int N, std::ostream & output)
 	// Allocate N contiguous unsigned long long int sized chunks of memory to an array for storing N floating-point values.
 	// Store the memory address of the first element of that array in T.
 	T = new unsigned long long int [N];
+
+	// Print "number_of_bytes(unsigned long long int) := {sizeof(unsigned long long int)}." to the output stream.
+	output << "\n\nnumber_of_bytes(unsigned long long int) := " << sizeof(unsigned long long int) << ".";
 
 	// Print "memory_address_of(T) := {memory_address_of(T)}." to the output stream.
 	output << "\n\nmemory_address_of(T) := " << &T << ".";
@@ -154,11 +156,6 @@ long double e(int N, std::ostream & output)
 
 	// Return the value which is stored in A.
 	return A;
-}
-
-long double better_e(int N, std::ostream & output)
-{
-	return pow((1 + (1/ N)), N);
 }
 
 /* program entry point */
@@ -246,12 +243,6 @@ int main()
 
 	// Print "A := e(N) = {e(N)}." to the file output stream.
 	file << "\n\nA := e(N) = " << A << ".";
-
-	// Print "better_e(N) = {better_e(N)}." to the command line terminal.
-	std::cout << "\n\nbetter_e(N) = " << better_e(N, file) << ".";
-
-	// Print "better_e(N) = {better_e(N)}." to the command line terminal.
-	file << "\n\nbetter_e(N) = " << better_e(N, file) << ".";
 
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";
