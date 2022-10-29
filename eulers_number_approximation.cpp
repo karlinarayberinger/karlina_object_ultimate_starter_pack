@@ -88,7 +88,7 @@ long double e(int N, std::ostream & output)
 	output << "\n\nnumber_of_bytes(unsigned long long int) := " << sizeof(unsigned long long int) << ".";
 
 	// Print "memory_address_of(T) := {memory_address_of(T)}." to the output stream.
-	output << "\n\nmemory_address_of(T) := " << &T << ".";
+	output << "\n\nmemory_address_of(T) := &T = " << &T << ".// & is a reference operator";
 
 	// Print "T := {T}." to the output stream.
 	output << "\n\nT := " << T << ". // pointer to unsigned long long int type variable";
@@ -233,7 +233,7 @@ int main()
 	file << "\n\nnumber_of_bytes(int) := " << sizeof(int) << ".";
 
 	// Print "memory_address_of(N) := {memory_address_of(N)}." to the command line terminal.
-	std::cout << "\n\nmemory_address_of(N) := " << &N << ".";
+	std::cout << "\n\nmemory_address_of(N) := &N = " << &N << ". // & is a reference operator";
 
 	// Print "memory_address_of(N):= {N}." to the file output stream.
 	file << "\n\nmemory_address_of(N) := " << &N << ".";
