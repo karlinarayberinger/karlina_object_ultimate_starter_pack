@@ -120,11 +120,14 @@ long double e(int N, std::ostream & output)
 	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
+		// Print "T[{i}] := factorial({T[i]}) = ({T[i]})! = " to the output stream.
+		output << "\nT[" << i << "] := factorial(" << T[i] << ") = (" << T[i] << ") = ";
+
 		// Store (N - i)! in T[i].
 		T[i] = compute_factorial_of_N_using_iteration(T[i]);
 
-		// Print "T[{i}] := {T[i]}." to the output stream.
-		output << "\nT[" << i << "] := " << T[i];
+		// Print {T[i]} to the output stream.
+		output << T[i];
 	}
 
 	// Print a newline character to the output stream.
@@ -151,10 +154,10 @@ int main()
 	// Set the intial value which is stored in N to one.
 	int N = 1;
 
-    // Set the number of digits of floating-point numbers which are printed to the command line terminal to 100 digits.
+    // Set the number of digits of floating-point numbers which are printed to the command line terminal to 50 digits.
     std::cout.precision(100);
 
-    // Set the number of digits of floating-point numbers which are printed to the file output stream to 100 digits.
+    // Set the number of digits of floating-point numbers which are printed to the file output stream to 50 digits.
     file.precision(100);
 
 	/**
