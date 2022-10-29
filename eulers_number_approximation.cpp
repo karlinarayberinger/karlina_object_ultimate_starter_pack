@@ -18,6 +18,9 @@ int main()
 	// Declare a file output stream object.
 	std::ofstream file;
 
+	// Declare a variable for storing integer values and set its initial value to zero.
+	int N = 0;
+
 	/**
 	 * If eulers_number_approximation_output.txt does not already exist in the same directory as eulers_number_approximation.cpp, 
 	 * then create a new file named eulers_number_approximation_output.txt.
@@ -36,6 +39,27 @@ int main()
 	file << "--------------------------------";
 	file << "\nSTART OF PROGRAM";
 	file << "\n--------------------------------";
+
+	// Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the command line terminal.
+	std::cout << "\n\nEnter a nonnegative integer which is no larger than " << MAXIMUM_N << ": ";
+
+	// Scan the command line terminal for the most recent keyboard input value.
+	std::cin >> N;
+
+	// Print "The value which was entered for N is {N}." to the command line terminal.
+	std::cout << "\nThe value which was entered for N is " << N << ".";
+
+	// Print "The value which was entered for N is {N}." to the file output stream.
+	file << "\n\nThe value which was entered for N is " << N << ".";
+
+	// If N is less than 0 or larger than MAXIMUM_N, then set N to 0.
+	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+
+	// Print "N := {N}." to the command line terminal.
+	std::cout << "\n\nN := " << N << ".";
+
+	// Print "N := {N}." to the file output stream.
+	file << "\n\nN := " << N << ".";
 
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";

@@ -2,6 +2,10 @@
 START OF PROGRAM
 --------------------------------
 
+The value which was entered for N is 100.
+
+N := 100.
+
 --------------------------------
 END OF PROGRAM
 --------------------------------
