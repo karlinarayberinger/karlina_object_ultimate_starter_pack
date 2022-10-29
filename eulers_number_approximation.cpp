@@ -93,8 +93,8 @@ long double e(int N, std::ostream & output)
 	// Print "T := {T}." to the output stream.
 	output << "\n\nT := " << T << ". // pointer to unsigned long long int type variable";
 
-	// Print "*T := {*T}." to the output stream.
-	output << "\n\n*T := " << *T << ". // dereferenced pointer to unsigned long long int type variable \n";
+	// Print "(*T) := {*T}." to the output stream.
+	output << "\n\n(*T) := " << *T << ". // dereferenced pointer to unsigned long long int type variable \n";
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order: 
 	// print the memory address of the ith element of the unsigned long long int type array represented by T to the output stream.
