@@ -116,7 +116,7 @@ long double e(int N, std::ostream & output)
 		T[i] = N - i;
 
 		// Print "T[{i}] := {T[i]}." to the output stream.
-		output << "\nT[" << i << "] := (" << T[i] << ") = " << N << " - " << i << ".";
+		output << "\nT[" << i << "] := " << T[i] << " = (" << N << " - " << i << ").";
 	}
 
 	// Print a newline character to the output stream.
