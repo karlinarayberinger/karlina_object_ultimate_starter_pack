@@ -121,7 +121,7 @@ long double e(int N, std::ostream & output)
 	for (i = 0; i < N; i += 1) 
 	{
 		// Print "T[{i}] := factorial({T[i]}) = ({T[i]})! = " to the output stream.
-		output << "\nT[" << i << "] := factorial(" << T[i] << ") = (" << T[i] << ") = ";
+		output << "\nT[" << i << "] := factorial(" << T[i] << ") = (" << T[i] << ")! = ";
 
 		// Store (N - i)! in T[i].
 		T[i] = compute_factorial_of_N_using_iteration(T[i]);
