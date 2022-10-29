@@ -53,7 +53,7 @@ int main()
 	// Print "The value which was entered for N is {N}." to the file output stream.
 	file << "\n\nThe value which was entered for N is " << N << ".";
 
-	// If N is smaller than or if N is 0 larger than MAXIMUM_N, set N to 0.
+	// If N is smaller than zero or if N is 0 larger than MAXIMUM_N, set N to 0.
 	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
 
 	// Print "N := {N}." to the command line terminal.
