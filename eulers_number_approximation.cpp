@@ -103,11 +103,11 @@ long double e(int N, std::ostream & output)
 	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
-		// Store the result of the arithmetic expression (M - i) in T[i].
+		// Store the result of the arithmetic expression (N - i) in T[i].
 		T[i] = N - i;
 
 		// Print "T[{i}] := {T[i]}." to the output stream.
-		output << "\nT[" << i << "] := " << T[i];
+		output << "\nT[" << i << "] := " << T[i] << " = N - " << i << " = " << N << " - " << i << ".";
 	}
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
@@ -115,8 +115,8 @@ long double e(int N, std::ostream & output)
 	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
-		// Store the result of the arithmetic expression (M - i) in T[i].
-		//T[i] = 1 / N
+		// Store (N - i)! in T[i].
+		T[i] = compute_factorial_of_N_using_iteration(T[i]);
 
 		// Print "T[{i}] := {T[i]}." to the output stream.
 		output << "\nT[" << i << "] := " << T[i];
