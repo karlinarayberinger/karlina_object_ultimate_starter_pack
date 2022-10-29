@@ -27,20 +27,15 @@ long double e(int N, std::ostream & output)
 	// Set the intial value which is stored in A to zero.
 	long double A = 0.0;
 
-	// Declare an int type variable (i.e. a variable for storing integer values) named _N. 
-	// Set the intial value which is stored in _N to one.
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored in i to zero.
-	int _N = 1, i = 0;
+	int i = 0;
 
 	// Declare a pointer to an long double type variable named T.
 	long double * T;
 
-	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to one. 
-	_N = ((N < 0) || (N > MAXIMUM_N)) ? 1 : N;
-
-	// Set the value of N to the value of _N.
-	N = _N;
+	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to one. 
+	N = ((N < 0) || (N > MAXIMUM_N)) ? 1 : N;
 
 	// Allocate N contiguous long double sized chunks of memory to an array for storing N floating-point values.
 	// Store the memory address of the first element of that array in T.
@@ -64,15 +59,15 @@ long double e(int N, std::ostream & output)
 	output << '\n';
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
-	// set value of the ith element of the int type array represented by T to absolute_value_of(i - N) and
+	// set value of the ith element of the int type array represented by T to (N - i) and
 	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
+		// Store the result of the arithmetic expression (M - i) in T[i].
+		T[i] = N - i;
+
 		// Print "T[{i}] := {T[i]}." to the output stream.
 		output << "\nT[" << i << "] := " << T[i];
-
-		// Subtract one from the value which is stored in _N.
-		_N -= 1; 
 	}
 
 	// De-allocate memory which was assigned to the array named T.
