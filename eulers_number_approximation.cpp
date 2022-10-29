@@ -66,8 +66,8 @@ unsigned long long int compute_factorial_of_N_using_iteration(int N)
 long double e(int N, std::ostream & output)
 {
 	// Declare a long double type variable (i.e. a variable for storing floating-point number values) named A. 
-	// Set the intial value which is stored in A to zero.
-	long double A = 0.0;
+	// Set the intial value which is stored in A to one.
+	long double A = 1.0;
 
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored in i to zero.
@@ -136,6 +136,16 @@ long double e(int N, std::ostream & output)
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
 	// print the value of (1 / (N - i)!) to the output stream.
 	for (i = 0; i < N; i += 1) output << "\n(1 / T[" << i << "]) = (1 / " << T[i] << ") = " << (long double) 1 / T[i] << ".";
+
+	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
+	// add the value of (1 / (N - i)!) to A and print the contents of A to the output stream.
+	for (i = 0; i < N; i += 1) 
+	{
+		output << "\n\nA := A + (1 / (" << N << " - " << i << ")!)";
+		output << "\n= " << A << " + (1 / " << T[i] << ") = " << A << " + " << (long double) 1 / T[i];
+		A += (long double) 1 / T[i];
+		output << "\n = " << A << ".";
+	}
 
 	// De-allocate memory which was assigned to the array named T.
 	delete [] T;
