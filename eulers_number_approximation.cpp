@@ -127,6 +127,13 @@ long double e(int N, std::ostream & output)
 		output << "\nT[" << i << "] := " << T[i];
 	}
 
+	// Print a newline character to the output stream.
+	output << '\n';
+
+	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
+	// print the value of (1 / (N - i)!) to the output stream.
+	for (i = 0; i < N; i += 1) output << "\n(1 / T[" << i << "]) = (1 / " << T[i] << ") = " << (long double) 1 / T[i] << ".";
+
 	// De-allocate memory which was assigned to the array named T.
 	delete [] T;
 
