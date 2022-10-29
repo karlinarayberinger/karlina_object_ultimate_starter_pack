@@ -47,28 +47,30 @@ long double e(int N, std::ostream & output)
 	// Store the memory address of the first element of that array in T.
 	T = new int [N];
 
-	// Print "memory_address_of(A) := {T}." to the output stream.
+	// Print "memory_address_of(A) := {memory_address_of(T)}." to the output stream.
 	output << "\n\nmemory_address_of(T) := " << T << ".\n";
 
-	// For each integer value represented by i starting at 0 and ending at N in and in ascending order, 
-	// Print the memory address of the ith element of the array to the output stream.
+	// For each integer value represented by i starting at 0 and ending at N in and in ascending order: 
+	// print the memory address of the ith element of the int type array represented by T to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
-		// Print "T[{i}] := {T[i]}." to the output stream.
+		// Print "T[{i}] := {memory_address_of(T[i])}." to the output stream.
 		output << "\nT[" << i << "] := " << &T[i] << ".";
 	}
 
-	// For each integer value represented by i starting at 0 and ending at N in and in ascending order, 
-	// Print the memory address of the ith element of the array to the output stream.
+	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
+	// set value of the ith element of the int type array represented by T to absolute_value_of(i - N) and
+	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
+		// Store the value of _N in T[i].
+		T[i] = _N;
+
 		// Subtract one from the value which is stored in _N.
 		_N -= 1; 
-
-		T[i] = 1 / (N - _N);
-
+		
 		// Print "T[{i}] := {T[i]}." to the output stream.
-		output << "\nT[" << i << "] := " << &T[i] << ".";
+		output << "\nT[" << i << "] := " << T[i] << ".";
 	}
 
 	// De-allocate memory which was assigned to the array named T.
@@ -135,7 +137,7 @@ int main()
 	// Print "N := {N}." to the file output stream.
 	file << "\n\nN := " << N << ".";
 
-	// Print "memory_address_of(N) := {N}." to the command line terminal.
+	// Print "memory_address_of(N) := {memory_address_of(N)}." to the command line terminal.
 	std::cout << "\n\nmemory_address_of(N) := " << &N << ".";
 
 	// Print "memory_address_of(N):= {N}." to the file output stream.
