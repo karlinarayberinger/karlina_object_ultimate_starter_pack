@@ -21,17 +21,19 @@ long double e(int N, std::ostream & output);
  * 
  * The value returned by this function is a double-precision floating type value.
  */
-long double e(int N)
+long double e(int N, std::ostream & output)
 {
 	// Declare a long double type variable (i.e. a variable for storing floating-point number values) named A. 
 	// Set the intial value which is stored in A to zero.
 	long double A = 0.0;
 
+	// Declare an int type variable (i.e. a variable for storing integer values) named term. 
+	// Set the intial value which is stored in term to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named _N. 
 	// Set the intial value which is stored in _N to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored in i to zero.
-	int _N = 0, i = 0;
+	int term = 0, _N = 0, i = 0;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to zero.
 	// Otherwise, set _N to zero (and set N to _N).
@@ -43,7 +45,8 @@ long double e(int N)
 		// Subtract one from the value which is stored in _N.
 		_N -= 1; 
 
-		A += (1 / (N - _N));
+		term = 1 / (N - _N);
+
 
 		// Add one to the value which is stored in i.
 		i += 1; 
@@ -83,17 +86,17 @@ int main()
 	file << "\nSTART OF PROGRAM";
 	file << "\n--------------------------------";
 
-	// Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the command line terminal.
-	std::cout << "\n\nEnter a nonnegative integer which is no larger than " << MAXIMUM_N << ": ";
+	// Print "Enter a nonnegative integer value which is no larger than {MAXIMUM_N}: " to the command line terminal.
+	std::cout << "\n\nEnter a nonnegative integer value which is no larger than " << MAXIMUM_N << ": ";
 
 	// Scan the command line terminal for the most recent keyboard input value.
 	std::cin >> N;
 
-	// Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the command line terminal.
-	std::cout << "\n\nEnter a nonnegative integer which is no larger than " << MAXIMUM_N << ": ";
+	// Print "Enter a nonnegative integer value which is no larger than {MAXIMUM_N}: " to the command line terminal.
+	std::cout << "\n\nEnter a nonnegative integer value which is no larger than " << MAXIMUM_N << ": ";
 
-	// Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the file output stream.
-	file << "\n\nEnter a nonnegative integer which is no larger than " << MAXIMUM_N << ": ";
+	// Print "Enter a nonnegative integer value which is no larger than {MAXIMUM_N}: " to the file output stream.
+	file << "\n\nEnter a nonnegative integer value which is no larger than " << MAXIMUM_N << ": ";
 
 	// Print "The value which was entered to store inside of the int type variable named N is {N}." to the command line terminal.
 	std::cout << "\nThe value which was entered to store inside of the int type variable named N is " << N << ".";
@@ -117,10 +120,10 @@ int main()
 	file << "\n\nmemory_address_of(N) := " << &N << ".";
 
 	// Print "e(N) := {e(N)}." to the command line terminal.
-	std::cout << "\n\ne(N) := " << e(N) << ".";
+	std::cout << "\n\ne(N) := " << e(N,file) << ".";
 
 	// Print "e(N) := {e(N)}." to the file output stream.
-	file << "\n\ne(N) := " << e(N) << ".";
+	file << "\n\ne(N) := " << e(N,file) << ".";
 
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";
