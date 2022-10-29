@@ -1,7 +1,7 @@
 /**
  * @file: eulers_number_approximation.cpp
  * @type: C++ (source file)
- * @date: 01_AUGUST_2022
+ * @date: 28_OCTOBER_2022
  * @author: Karlina Ray Beringer
  * @license: PUBLIC_DOMAIN
  */
