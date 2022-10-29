@@ -23,10 +23,11 @@ int main()
 	int N = 0;
 
 	/**
-	 * If eulers_number_approximation_output.txt does not already exist in the same directory as eulers_number_approximation.cpp, 
+	 * If the file named eulers_number_approximation_output.txt does not already exist inside of the same 
+	 * file directory as does the file named eulers_number_approximation.cpp, 
 	 * create a new file named eulers_number_approximation_output.txt.
 	 * 
-	 * Then open the plain-text file named eulers_number_approximation_output.txt 
+	 * Open the plain-text file named eulers_number_approximation_output.txt 
 	 * and set that file to be overwritten with program data.
 	 */
 	file.open("eulers_number_approximation_output.txt");
