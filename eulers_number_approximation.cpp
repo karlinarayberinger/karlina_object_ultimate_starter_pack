@@ -1,10 +1,10 @@
-/**
- * @file: eulers_number_approximation.cpp
- * @type: C++ (source file)
- * @date: 28_OCTOBER_2022
- * @author: Karlina Ray Beringer
- * @license: PUBLIC_DOMAIN
- */
+//
+// file: eulers_number_approximation.cpp
+// type: C++ (source file)
+// date: 28_OCTOBER_2022
+// author: Karlina Ray Beringer (@karbytes)
+// license: PUBLIC_DOMAIN
+//
 
 /* preprocessing directives */
 #include <iostream> // command line input and output
