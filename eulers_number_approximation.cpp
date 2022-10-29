@@ -21,7 +21,7 @@ int e(int N, std::ostream & output);
  */
 int e(int N)
 {
-	// If N is smaller than zero or if N is 0 larger than MAXIMUM_N, set N to 0.
+	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to 0.
 	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
 
 	// Exit the function.
@@ -76,7 +76,7 @@ int main()
 	// Print "The value which was entered to store inside of the int type variable named N is {N}." to the file output stream.
 	file << "\n\nThe value which was entered to store inside of the int type variable named N is " << N << ".";
 
-	// If N is smaller than zero or if N is 0 larger than MAXIMUM_N, set N to 0.
+	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to 0.
 	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
 
 	// Print "N := {N}." to the command line terminal.
