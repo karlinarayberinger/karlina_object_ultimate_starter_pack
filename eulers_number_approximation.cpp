@@ -164,6 +164,10 @@ int main()
 	// Set the intial value which is stored in N to one.
 	int N = 1;
 
+	// Declare a long double type variable (i.e. a variable for storing floating-point number values) named A. 
+	// Set the intial value which is stored in A to one.
+	long double A = 1.0;
+
     // Set the number of digits of floating-point numbers which are printed to the command line terminal to 50 digits.
     std::cout.precision(100);
 
@@ -223,11 +227,18 @@ int main()
 	// Print "memory_address_of(N):= {N}." to the file output stream.
 	file << "\n\nmemory_address_of(N) := " << &N << ".";
 
-	// Print "e(N) := {e(N)}." to the command line terminal.
-	std::cout << "\n\ne(N) := " << e(N, std::cout) << ".";
+	// Compute the Nth approximation of Euler's Number and store the result in A.
+	// Print the steps involved in generating an approximation of Euler's Number to the command line terminal.
+	A = e(N, std::cout);
 
-	// Print "e(N) := {e(N)}." to the file output stream.
-	file << "\n\ne(N) := " << e(N, file) << ".";
+	// Print the steps involved in generating an approximation of Euler's Number to the file output stream.
+	e(N, file);
+
+	// Print "A := e(N) = {e(N)}." to the command line terminal.
+	std::cout << "\n\nA := e(N) = " << A << ".";
+
+	// Print "A := e(N) = {e(N)}." to the file output stream.
+	file << "\n\nA := e(N) = " << A << ".";
 
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";
