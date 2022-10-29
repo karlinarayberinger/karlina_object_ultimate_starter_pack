@@ -236,7 +236,7 @@ int main()
 	std::cout << "\n\nmemory_address_of(N) := &N = " << &N << ". // & is a reference operator";
 
 	// Print "memory_address_of(N):= {N}." to the file output stream.
-	file << "\n\nmemory_address_of(N) := " << &N << ".";
+	file << "\n\nmemory_address_of(N) := &N = " << &N << ". // & is a reference operator";
 
 	// Print "number_of_bytes(long double) := {sizeof(long double)}." to the command line terminal.
 	std::cout << "\n\nnumber_of_bytes(long double) := " << sizeof(long double) << ".";
