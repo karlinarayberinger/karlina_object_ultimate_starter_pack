@@ -2,11 +2,13 @@
 START OF PROGRAM
 --------------------------------
 
-The value which was entered to store inside of the int type variable named N is 10000.
+Enter a nonnegative integer which is no larger than {MAXIMUM_N}: 
 
-N := 0.
+The value which was entered to store inside of the int type variable named N is 666.
 
-memory_address_of(N) := 0x7ffd623f51fc.
+N := 666.
+
+memory_address_of(N) := 0x7ffcb086a68c.
 
 --------------------------------
 END OF PROGRAM

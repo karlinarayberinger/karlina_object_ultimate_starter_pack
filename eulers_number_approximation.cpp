@@ -48,6 +48,12 @@ int main()
 	// Scan the command line terminal for the most recent keyboard input value.
 	std::cin >> N;
 
+	// Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the command line terminal.
+	std::cout << "\n\nEnter a nonnegative integer which is no larger than {MAXIMUM_N}: ";
+
+	// Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the file output stream.
+	file << "\n\nEnter a nonnegative integer which is no larger than {MAXIMUM_N}: ";
+
 	// Print "The value which was entered to store inside of the int type variable named N is {N}." to the command line terminal.
 	std::cout << "\nThe value which was entered to store inside of the int type variable named N is " << N << ".";
 
