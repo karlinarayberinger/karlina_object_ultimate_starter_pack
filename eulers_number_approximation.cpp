@@ -15,5 +15,41 @@
 /* program entry point */
 int main()
 {
+	// Declare a file output stream object.
+	std::ofstream file;
+
+	/**
+	 * If eulers_number_approximation_output.txt does not already exist in the same directory as eulers_number_approximation.cpp, 
+	 * then create a new file named eulers_number_approximation_output.txt.
+	 * 
+	 * Then open the plain-text file named eulers_number_approximation_output.txt 
+	 * and set that file to be overwritten with program data.
+	 */
+	file.open("eulers_number_approximation_output.txt");
+
+	// Print an opening message to the command line terminal.
+	std::cout << "\n\n--------------------------------";
+	std::cout << "\nSTART OF PROGRAM";
+	std::cout << "\n--------------------------------";
+
+	// Print an opening message to the file output stream.
+	file << "--------------------------------";
+	file << "\nSTART OF PROGRAM";
+	file << "\n--------------------------------";
+
+	// Print a closing message to the command line terminal.
+	std::cout << "\n\n--------------------------------";
+	std::cout << "\nEND OF PROGRAM";
+	std::cout << "\n--------------------------------\n\n";
+
+	// Print a closing message to the file output stream.
+	file << "\n\n--------------------------------";
+	file << "\nEND OF PROGRAM";
+	file << "\n--------------------------------";
+
+	// Close the file output stream.
+	file.close();
+
+	// Exit the program.
 	return 0;
 }
