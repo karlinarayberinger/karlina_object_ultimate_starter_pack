@@ -13,7 +13,7 @@
 #define MAXIMUM_N 1000 // constant which represents maximum N value
 
 /* function prototypes */
-int compute_factorial_of_N_using_iteration(int N);
+unsigned long long int compute_factorial_of_N_using_iteration(int N);
 long double e(int N, std::ostream & output);
 
 /**
@@ -26,13 +26,15 @@ long double e(int N, std::ostream & output);
  * If N is zero, then N! is one.
  * 0! := 1.
  */
-int compute_factorial_of_N_using_iteration(int N)
+unsigned long long int compute_factorial_of_N_using_iteration(int N)
 {
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored in i to zero.
-	// Declare an int type variable (i.e. a variable for storing integer values) named F. 
-	// Set the intial value which is stored in i to zero.
-	int i = 0, F = 0; 
+	int i = 0;
+
+	// Declare an unsigned long long int type variable (i.e. a variable for storing integer values) named F. 
+	// Set the intial value which is stored in F to zero.
+	unsigned long long int F = 0; 
 
 	// If N is larger than zero and if N is no larger than MAXIMUM_N, set i to N. 
 	// Otherwise, set i to 0.
@@ -82,7 +84,7 @@ long double e(int N, std::ostream & output)
 	T = new long double [N];
 
 	// Print "memory_address_of(T) := {memory_address_of(T)}." to the output stream.
-	output << "\n\nmemory_address_of(T) := " << &T << ".\n";
+	output << "\n\nmemory_address_of(T) := " << &T << ".";
 
 	// Print "T := {T}." to the output stream.
 	output << "\n\nT := " << T << ".\n";
@@ -107,8 +109,11 @@ long double e(int N, std::ostream & output)
 		T[i] = N - i;
 
 		// Print "T[{i}] := {T[i]}." to the output stream.
-		output << "\nT[" << i << "] := " << T[i] << " = N - " << i << " = " << N << " - " << i << ".";
+		output << "\nT[" << i << "] := " << T[i] << " = " << N << " - " << i << ".";
 	}
+
+	// Print a newline character to the output stream.
+	output << '\n';
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
 	// set value of the ith element of the int type array represented by T to (N - i)! and
