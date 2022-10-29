@@ -15,10 +15,11 @@
 /* program entry point */
 int main()
 {
-	// Declare a file output stream object.
+	// Declare a file output stream object named file.
 	std::ofstream file;
 
-	// Declare a variable for storing integer values and set its initial value to zero.
+	// Declare an int-type variable (i.e. a variable for storing integer values) named N. 
+	// Set the intial value stored in N to zero.
 	int N = 0;
 
 	/**
