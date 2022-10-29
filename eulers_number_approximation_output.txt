@@ -8,153 +8,153 @@ N := 65. // int type variable
 
 number_of_bytes(int) := 4.
 
-memory_address_of(N) := 0x7ffd7eaf050c.
+memory_address_of(N) := 0x7fff11bc602c.
 
 number_of_bytes(long double) := 16.
 
 A := 1. // long double type variable
 
-memory_address_of(N) := 0x7ffd7eaf0510.
+memory_address_of(N) := 0x7fff11bc6030.
 
 number_of_bytes(unsigned long long int) := 8.
 
-memory_address_of(T) := 0x7ffd7eaf04b8.
+memory_address_of(T) := 0x7fff11bc5fd8.
 
-T := 0x55a7a82538c0. // pointer to unsigned long long int type variable
+T := 0x557e16b838c0. // pointer to unsigned long long int type variable
 
-*T := 22992814675. // dereferenced pointer to unsigned long long int type variable 
+*T := 22949227395. // dereferenced pointer to unsigned long long int type variable 
 
-T[0] := 0x55a7a82538c0. // memory address of T[0]
-T[1] := 0x55a7a82538c8. // memory address of T[1]
-T[2] := 0x55a7a82538d0. // memory address of T[2]
-T[3] := 0x55a7a82538d8. // memory address of T[3]
-T[4] := 0x55a7a82538e0. // memory address of T[4]
-T[5] := 0x55a7a82538e8. // memory address of T[5]
-T[6] := 0x55a7a82538f0. // memory address of T[6]
-T[7] := 0x55a7a82538f8. // memory address of T[7]
-T[8] := 0x55a7a8253900. // memory address of T[8]
-T[9] := 0x55a7a8253908. // memory address of T[9]
-T[10] := 0x55a7a8253910. // memory address of T[10]
-T[11] := 0x55a7a8253918. // memory address of T[11]
-T[12] := 0x55a7a8253920. // memory address of T[12]
-T[13] := 0x55a7a8253928. // memory address of T[13]
-T[14] := 0x55a7a8253930. // memory address of T[14]
-T[15] := 0x55a7a8253938. // memory address of T[15]
-T[16] := 0x55a7a8253940. // memory address of T[16]
-T[17] := 0x55a7a8253948. // memory address of T[17]
-T[18] := 0x55a7a8253950. // memory address of T[18]
-T[19] := 0x55a7a8253958. // memory address of T[19]
-T[20] := 0x55a7a8253960. // memory address of T[20]
-T[21] := 0x55a7a8253968. // memory address of T[21]
-T[22] := 0x55a7a8253970. // memory address of T[22]
-T[23] := 0x55a7a8253978. // memory address of T[23]
-T[24] := 0x55a7a8253980. // memory address of T[24]
-T[25] := 0x55a7a8253988. // memory address of T[25]
-T[26] := 0x55a7a8253990. // memory address of T[26]
-T[27] := 0x55a7a8253998. // memory address of T[27]
-T[28] := 0x55a7a82539a0. // memory address of T[28]
-T[29] := 0x55a7a82539a8. // memory address of T[29]
-T[30] := 0x55a7a82539b0. // memory address of T[30]
-T[31] := 0x55a7a82539b8. // memory address of T[31]
-T[32] := 0x55a7a82539c0. // memory address of T[32]
-T[33] := 0x55a7a82539c8. // memory address of T[33]
-T[34] := 0x55a7a82539d0. // memory address of T[34]
-T[35] := 0x55a7a82539d8. // memory address of T[35]
-T[36] := 0x55a7a82539e0. // memory address of T[36]
-T[37] := 0x55a7a82539e8. // memory address of T[37]
-T[38] := 0x55a7a82539f0. // memory address of T[38]
-T[39] := 0x55a7a82539f8. // memory address of T[39]
-T[40] := 0x55a7a8253a00. // memory address of T[40]
-T[41] := 0x55a7a8253a08. // memory address of T[41]
-T[42] := 0x55a7a8253a10. // memory address of T[42]
-T[43] := 0x55a7a8253a18. // memory address of T[43]
-T[44] := 0x55a7a8253a20. // memory address of T[44]
-T[45] := 0x55a7a8253a28. // memory address of T[45]
-T[46] := 0x55a7a8253a30. // memory address of T[46]
-T[47] := 0x55a7a8253a38. // memory address of T[47]
-T[48] := 0x55a7a8253a40. // memory address of T[48]
-T[49] := 0x55a7a8253a48. // memory address of T[49]
-T[50] := 0x55a7a8253a50. // memory address of T[50]
-T[51] := 0x55a7a8253a58. // memory address of T[51]
-T[52] := 0x55a7a8253a60. // memory address of T[52]
-T[53] := 0x55a7a8253a68. // memory address of T[53]
-T[54] := 0x55a7a8253a70. // memory address of T[54]
-T[55] := 0x55a7a8253a78. // memory address of T[55]
-T[56] := 0x55a7a8253a80. // memory address of T[56]
-T[57] := 0x55a7a8253a88. // memory address of T[57]
-T[58] := 0x55a7a8253a90. // memory address of T[58]
-T[59] := 0x55a7a8253a98. // memory address of T[59]
-T[60] := 0x55a7a8253aa0. // memory address of T[60]
-T[61] := 0x55a7a8253aa8. // memory address of T[61]
-T[62] := 0x55a7a8253ab0. // memory address of T[62]
-T[63] := 0x55a7a8253ab8. // memory address of T[63]
-T[64] := 0x55a7a8253ac0. // memory address of T[64]
+T[0] := 0x557e16b838c0. // memory address of T[0]
+T[1] := 0x557e16b838c8. // memory address of T[1]
+T[2] := 0x557e16b838d0. // memory address of T[2]
+T[3] := 0x557e16b838d8. // memory address of T[3]
+T[4] := 0x557e16b838e0. // memory address of T[4]
+T[5] := 0x557e16b838e8. // memory address of T[5]
+T[6] := 0x557e16b838f0. // memory address of T[6]
+T[7] := 0x557e16b838f8. // memory address of T[7]
+T[8] := 0x557e16b83900. // memory address of T[8]
+T[9] := 0x557e16b83908. // memory address of T[9]
+T[10] := 0x557e16b83910. // memory address of T[10]
+T[11] := 0x557e16b83918. // memory address of T[11]
+T[12] := 0x557e16b83920. // memory address of T[12]
+T[13] := 0x557e16b83928. // memory address of T[13]
+T[14] := 0x557e16b83930. // memory address of T[14]
+T[15] := 0x557e16b83938. // memory address of T[15]
+T[16] := 0x557e16b83940. // memory address of T[16]
+T[17] := 0x557e16b83948. // memory address of T[17]
+T[18] := 0x557e16b83950. // memory address of T[18]
+T[19] := 0x557e16b83958. // memory address of T[19]
+T[20] := 0x557e16b83960. // memory address of T[20]
+T[21] := 0x557e16b83968. // memory address of T[21]
+T[22] := 0x557e16b83970. // memory address of T[22]
+T[23] := 0x557e16b83978. // memory address of T[23]
+T[24] := 0x557e16b83980. // memory address of T[24]
+T[25] := 0x557e16b83988. // memory address of T[25]
+T[26] := 0x557e16b83990. // memory address of T[26]
+T[27] := 0x557e16b83998. // memory address of T[27]
+T[28] := 0x557e16b839a0. // memory address of T[28]
+T[29] := 0x557e16b839a8. // memory address of T[29]
+T[30] := 0x557e16b839b0. // memory address of T[30]
+T[31] := 0x557e16b839b8. // memory address of T[31]
+T[32] := 0x557e16b839c0. // memory address of T[32]
+T[33] := 0x557e16b839c8. // memory address of T[33]
+T[34] := 0x557e16b839d0. // memory address of T[34]
+T[35] := 0x557e16b839d8. // memory address of T[35]
+T[36] := 0x557e16b839e0. // memory address of T[36]
+T[37] := 0x557e16b839e8. // memory address of T[37]
+T[38] := 0x557e16b839f0. // memory address of T[38]
+T[39] := 0x557e16b839f8. // memory address of T[39]
+T[40] := 0x557e16b83a00. // memory address of T[40]
+T[41] := 0x557e16b83a08. // memory address of T[41]
+T[42] := 0x557e16b83a10. // memory address of T[42]
+T[43] := 0x557e16b83a18. // memory address of T[43]
+T[44] := 0x557e16b83a20. // memory address of T[44]
+T[45] := 0x557e16b83a28. // memory address of T[45]
+T[46] := 0x557e16b83a30. // memory address of T[46]
+T[47] := 0x557e16b83a38. // memory address of T[47]
+T[48] := 0x557e16b83a40. // memory address of T[48]
+T[49] := 0x557e16b83a48. // memory address of T[49]
+T[50] := 0x557e16b83a50. // memory address of T[50]
+T[51] := 0x557e16b83a58. // memory address of T[51]
+T[52] := 0x557e16b83a60. // memory address of T[52]
+T[53] := 0x557e16b83a68. // memory address of T[53]
+T[54] := 0x557e16b83a70. // memory address of T[54]
+T[55] := 0x557e16b83a78. // memory address of T[55]
+T[56] := 0x557e16b83a80. // memory address of T[56]
+T[57] := 0x557e16b83a88. // memory address of T[57]
+T[58] := 0x557e16b83a90. // memory address of T[58]
+T[59] := 0x557e16b83a98. // memory address of T[59]
+T[60] := 0x557e16b83aa0. // memory address of T[60]
+T[61] := 0x557e16b83aa8. // memory address of T[61]
+T[62] := 0x557e16b83ab0. // memory address of T[62]
+T[63] := 0x557e16b83ab8. // memory address of T[63]
+T[64] := 0x557e16b83ac0. // memory address of T[64]
 
-T[0] := 65 = 65 - 0.
-T[1] := 64 = 65 - 1.
-T[2] := 63 = 65 - 2.
-T[3] := 62 = 65 - 3.
-T[4] := 61 = 65 - 4.
-T[5] := 60 = 65 - 5.
-T[6] := 59 = 65 - 6.
-T[7] := 58 = 65 - 7.
-T[8] := 57 = 65 - 8.
-T[9] := 56 = 65 - 9.
-T[10] := 55 = 65 - 10.
-T[11] := 54 = 65 - 11.
-T[12] := 53 = 65 - 12.
-T[13] := 52 = 65 - 13.
-T[14] := 51 = 65 - 14.
-T[15] := 50 = 65 - 15.
-T[16] := 49 = 65 - 16.
-T[17] := 48 = 65 - 17.
-T[18] := 47 = 65 - 18.
-T[19] := 46 = 65 - 19.
-T[20] := 45 = 65 - 20.
-T[21] := 44 = 65 - 21.
-T[22] := 43 = 65 - 22.
-T[23] := 42 = 65 - 23.
-T[24] := 41 = 65 - 24.
-T[25] := 40 = 65 - 25.
-T[26] := 39 = 65 - 26.
-T[27] := 38 = 65 - 27.
-T[28] := 37 = 65 - 28.
-T[29] := 36 = 65 - 29.
-T[30] := 35 = 65 - 30.
-T[31] := 34 = 65 - 31.
-T[32] := 33 = 65 - 32.
-T[33] := 32 = 65 - 33.
-T[34] := 31 = 65 - 34.
-T[35] := 30 = 65 - 35.
-T[36] := 29 = 65 - 36.
-T[37] := 28 = 65 - 37.
-T[38] := 27 = 65 - 38.
-T[39] := 26 = 65 - 39.
-T[40] := 25 = 65 - 40.
-T[41] := 24 = 65 - 41.
-T[42] := 23 = 65 - 42.
-T[43] := 22 = 65 - 43.
-T[44] := 21 = 65 - 44.
-T[45] := 20 = 65 - 45.
-T[46] := 19 = 65 - 46.
-T[47] := 18 = 65 - 47.
-T[48] := 17 = 65 - 48.
-T[49] := 16 = 65 - 49.
-T[50] := 15 = 65 - 50.
-T[51] := 14 = 65 - 51.
-T[52] := 13 = 65 - 52.
-T[53] := 12 = 65 - 53.
-T[54] := 11 = 65 - 54.
-T[55] := 10 = 65 - 55.
-T[56] := 9 = 65 - 56.
-T[57] := 8 = 65 - 57.
-T[58] := 7 = 65 - 58.
-T[59] := 6 = 65 - 59.
-T[60] := 5 = 65 - 60.
-T[61] := 4 = 65 - 61.
-T[62] := 3 = 65 - 62.
-T[63] := 2 = 65 - 63.
-T[64] := 1 = 65 - 64.
+T[0] := (65) = 65 - 0.
+T[1] := (64) = 65 - 1.
+T[2] := (63) = 65 - 2.
+T[3] := (62) = 65 - 3.
+T[4] := (61) = 65 - 4.
+T[5] := (60) = 65 - 5.
+T[6] := (59) = 65 - 6.
+T[7] := (58) = 65 - 7.
+T[8] := (57) = 65 - 8.
+T[9] := (56) = 65 - 9.
+T[10] := (55) = 65 - 10.
+T[11] := (54) = 65 - 11.
+T[12] := (53) = 65 - 12.
+T[13] := (52) = 65 - 13.
+T[14] := (51) = 65 - 14.
+T[15] := (50) = 65 - 15.
+T[16] := (49) = 65 - 16.
+T[17] := (48) = 65 - 17.
+T[18] := (47) = 65 - 18.
+T[19] := (46) = 65 - 19.
+T[20] := (45) = 65 - 20.
+T[21] := (44) = 65 - 21.
+T[22] := (43) = 65 - 22.
+T[23] := (42) = 65 - 23.
+T[24] := (41) = 65 - 24.
+T[25] := (40) = 65 - 25.
+T[26] := (39) = 65 - 26.
+T[27] := (38) = 65 - 27.
+T[28] := (37) = 65 - 28.
+T[29] := (36) = 65 - 29.
+T[30] := (35) = 65 - 30.
+T[31] := (34) = 65 - 31.
+T[32] := (33) = 65 - 32.
+T[33] := (32) = 65 - 33.
+T[34] := (31) = 65 - 34.
+T[35] := (30) = 65 - 35.
+T[36] := (29) = 65 - 36.
+T[37] := (28) = 65 - 37.
+T[38] := (27) = 65 - 38.
+T[39] := (26) = 65 - 39.
+T[40] := (25) = 65 - 40.
+T[41] := (24) = 65 - 41.
+T[42] := (23) = 65 - 42.
+T[43] := (22) = 65 - 43.
+T[44] := (21) = 65 - 44.
+T[45] := (20) = 65 - 45.
+T[46] := (19) = 65 - 46.
+T[47] := (18) = 65 - 47.
+T[48] := (17) = 65 - 48.
+T[49] := (16) = 65 - 49.
+T[50] := (15) = 65 - 50.
+T[51] := (14) = 65 - 51.
+T[52] := (13) = 65 - 52.
+T[53] := (12) = 65 - 53.
+T[54] := (11) = 65 - 54.
+T[55] := (10) = 65 - 55.
+T[56] := (9) = 65 - 56.
+T[57] := (8) = 65 - 57.
+T[58] := (7) = 65 - 58.
+T[59] := (6) = 65 - 59.
+T[60] := (5) = 65 - 60.
+T[61] := (4) = 65 - 61.
+T[62] := (3) = 65 - 62.
+T[63] := (2) = 65 - 63.
+T[64] := (1) = 65 - 64.
 
 T[0] := factorial(65) = (65)! = 9223372036854775808
 T[1] := factorial(64) = (64)! = 9223372036854775808
