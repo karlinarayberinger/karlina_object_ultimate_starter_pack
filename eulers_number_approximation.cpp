@@ -142,7 +142,7 @@ long double e(int N, std::ostream & output)
 	for (i = 0; i < N; i += 1) 
 	{
 		output << "\n\nA := A + (1 / (" << N << " - " << i << ")!)";
-		output << "\n= " << A << " + (1 / " << T[i] << ") = " << A << " + " << (long double) 1 / T[i];
+		output << "\n = " << A << " + (1 / " << T[i] << ") = " << A << " + " << (long double) 1 / T[i];
 		A += (long double) 1 / T[i];
 		output << "\n = " << A << ".";
 	}
