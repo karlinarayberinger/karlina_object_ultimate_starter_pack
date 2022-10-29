@@ -23,7 +23,9 @@ int e(int N)
 {
 	// Declare an int type variable (i.e. a variable for storing integer values) named A. 
 	// Set the intial value which is stored inside of A to zero.
-	int A = 0;
+	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
+	// Set the intial value which is stored inside of i to zero.
+	int A = 0, i = 0;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to zero.
 	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
