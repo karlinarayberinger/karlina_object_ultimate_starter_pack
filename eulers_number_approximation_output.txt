@@ -2,11 +2,11 @@
 START OF PROGRAM
 --------------------------------
 
-The value which was entered for N is 1000.
+The value which was entered to store inside of the int type variable named N is 10000.
 
-N := 1000.
+N := 0.
 
-memory_address_of(N) := 0x7ffd3f4bef2c.
+memory_address_of(N) := 0x7ffd623f51fc.
 
 --------------------------------
 END OF PROGRAM
