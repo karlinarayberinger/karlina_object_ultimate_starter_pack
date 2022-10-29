@@ -24,7 +24,7 @@ int main()
 
 	/**
 	 * If eulers_number_approximation_output.txt does not already exist in the same directory as eulers_number_approximation.cpp, 
-	 * then create a new file named eulers_number_approximation_output.txt.
+	 * create a new file named eulers_number_approximation_output.txt.
 	 * 
 	 * Then open the plain-text file named eulers_number_approximation_output.txt 
 	 * and set that file to be overwritten with program data.
@@ -53,7 +53,7 @@ int main()
 	// Print "The value which was entered for N is {N}." to the file output stream.
 	file << "\n\nThe value which was entered for N is " << N << ".";
 
-	// If N is less than 0 or larger than MAXIMUM_N, then set N to 0.
+	// If N is smaller than or if N is 0 larger than MAXIMUM_N, set N to 0.
 	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
 
 	// Print "N := {N}." to the command line terminal.
