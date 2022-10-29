@@ -87,21 +87,21 @@ long double e(int N, std::ostream & output)
 	// Print "number_of_bytes(unsigned long long int) := {sizeof(unsigned long long int)}." to the output stream.
 	output << "\n\nnumber_of_bytes(unsigned long long int) := " << sizeof(unsigned long long int) << ".";
 
-	// Print "memory_address_of(T) := {memory_address_of(T)}." to the output stream.
-	output << "\n\nmemory_address_of(T) = &T = " << &T << ".// & is a reference operator";
+	// Print "memory_address_of(T) = (&T) := {memory_address_of(T)}." to the output stream.
+	output << "\n\nmemory_address_of(T) = (&T) := " << &T << ".// & is a reference operator";
 
 	// Print "T := {T}." to the output stream.
 	output << "\n\nT := " << T << ". // pointer to unsigned long long int type variable";
 
 	// Print "(*T) := {*T}." to the output stream.
-	output << "\n\n(*T) := " << *T << ". // dereferenced pointer to unsigned long long int type variable \n";
+	output << "\n\n(*T) := " << (*T) << ". // dereferenced pointer to unsigned long long int type variable \n";
 
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order: 
 	// print the memory address of the ith element of the unsigned long long int type array represented by T to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
-		// Print "T[{i}] := {memory_address_of(T[i])}." to the output stream.
-		output << "\nT[" << i << "] := " << &T[i] << ". // memory address of T[" << i << "]";
+		// Print "(&T[{i}]) := {memory_address_of(T[i])}." to the output stream.
+		output << "\n(&T[" << i << "]) := " << &T[i] << ". // memory address of T[" << i << "]";
 	}
 
 	// Print a newline character to the output stream.
@@ -232,11 +232,11 @@ int main()
 	// Print "number_of_bytes(int) := {sizeof(int)}." to the file output stream.
 	file << "\n\nnumber_of_bytes(int) := " << sizeof(int) << ".";
 
-	// Print "memory_address_of(A) := {memory_address_of(A)}." to the command line terminal.
-	std::cout << "\n\nmemory_address_of(N) = &N = " << &N << ". // & is a reference operator";
+	// Print "memory_address_of(A) := (&N) = {memory_address_of(A)}." to the command line terminal.
+	std::cout << "\n\nmemory_address_of(N) = (&N) := " << &N << ". // & is a reference operator";
 
-	// Print "memory_address_of(N):= {N}." to the file output stream.
-	file << "\n\nmemory_address_of(N) = &N = " << &N << ". // & is a reference operator";
+	// Print "memory_address_of(N) = (&N) := {N}." to the file output stream.
+	file << "\n\nmemory_address_of(N) = (&N) := " << &N << ". // & is a reference operator";
 
 	// Print "number_of_bytes(long double) := {sizeof(long double)}." to the command line terminal.
 	std::cout << "\n\nnumber_of_bytes(long double) := " << sizeof(long double) << ".";
@@ -250,12 +250,11 @@ int main()
 	// Print "A := {A}." to the file output stream.
 	file << "\n\nA := " << A << ". // long double type variable";
 
-	// Print "memory_address_of(A) := {memory_address_of(A)}." to the command line terminal.
-	std::cout << "\n\nmemory_address_of(A) = &A = " << &A << ". // & is a reference operator";
+	// Print "memory_address_of(A) = (&A) := {memory_address_of(A)}." to the command line terminal.
+	std::cout << "\n\nmemory_address_of(A) = (&A) := " << &A << ". // & is a reference operator";
 
-	// Print "memory_address_of(A):= {A}." to the file output stream.
-	file << "\n\nmemory_address_of(N) = &A = " << &A << ". // & is a reference operator";
-
+	// Print "memory_address_of(A) = (&A) := {A}." to the file output stream.
+	file << "\n\nmemory_address_of(N) = (&A) := " << &A << ". // & is a reference operator";
 
 	// Compute the Nth approximation of Euler's Number and store the result in A.
 	// Print the steps involved in generating an approximation of Euler's Number to the command line terminal.
@@ -264,11 +263,11 @@ int main()
 	// Print the steps involved in generating an approximation of Euler's Number to the file output stream.
 	e(N, file);
 
-	// Print "A := e(N) = {e(N)}." to the command line terminal.
-	std::cout << "\n\nA := e(N) = " << A << ".";
+	// Print "A = e(N) := {e(N)}." to the command line terminal.
+	std::cout << "\n\nA = e(N) := " << A << ".";
 
-	// Print "A := e(N) = {e(N)}." to the file output stream.
-	file << "\n\nA := e(N) = " << A << ".";
+	// Print "A = e(N) := {e(N)}." to the file output stream.
+	file << "\n\nA = e(N) := " << A << ".";
 
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";
