@@ -204,14 +204,11 @@ int main()
 	// Print "Enter a natural number which is no larger than {MAXIMUM_N}: " to the command line terminal.
 	std::cout << "\n\nEnter a natural number which is no larger than " << MAXIMUM_N << ": ";
 
-	// Scan the command line terminal for the most recent keyboard input value.
-	std::cin >> N;
-
-	// Print "Enter a natural number which is no larger than {MAXIMUM_N}: " to the command line terminal.
-	std::cout << "\n\nEnter a natural number which is no larger than " << MAXIMUM_N << ": ";
-
 	// Print "Enter a natural number which is no larger than {MAXIMUM_N}: " to the file output stream.
 	file << "\n\nEnter a natural number which is no larger than " << MAXIMUM_N << ": ";
+
+	// Scan the command line terminal for the most recent keyboard input value.
+	std::cin >> N;
 
 	// Print {N} to the command line terminal.
 	std::cout << N;
