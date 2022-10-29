@@ -58,13 +58,17 @@ long double e(int N, std::ostream & output)
 		output << "\nT[" << i << "] := " << &T[i] << ".";
 	}
 
-	while (i <= N) 
+	// For each integer value represented by i starting at 0 and ending at N in and in ascending order, 
+	// Print the memory address of the ith element of the array to the output stream.
+	for (i = 0; i < N; i += 1) 
 	{
 		// Subtract one from the value which is stored in _N.
 		_N -= 1; 
 
-		// Add one to the value which is stored in i.
-		i += 1; 
+		T[i] = 1 / (N - _N);
+
+		// Print "T[{i}] := {T[i]}." to the output stream.
+		output << "\nT[" << i << "] := " << &T[i] << ".";
 	}
 
 	// De-allocate memory which was assigned to the array named T.
