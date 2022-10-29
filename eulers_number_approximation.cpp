@@ -22,11 +22,11 @@ int e(int N, std::ostream & output);
 int e(int N)
 {
 	// Declare an int type variable (i.e. a variable for storing integer values) named A. 
-	// Set the intial value which is stored inside of A to zero.
+	// Set the intial value which is stored in A to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named _N. 
-	// Set the intial value which is stored inside of _N to zero.
+	// Set the intial value which is stored in _N to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
-	// Set the intial value which is stored inside of i to zero.
+	// Set the intial value which is stored in i to zero.
 	int A = 0, _N = 0, i = 0;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to zero.
@@ -55,7 +55,7 @@ int main()
 	std::ofstream file;
 
 	// Declare an int type variable (i.e. a variable for storing integer values) named N. 
-	// Set the intial value which is stored inside of N to zero.
+	// Set the intial value which is stored in N to zero.
 	int N = 0;
 
 	/**
