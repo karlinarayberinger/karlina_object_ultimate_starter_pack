@@ -36,15 +36,16 @@ int e(int N)
 
 	while (i <= N) 
 	{
-
 		// Subtract one from the value which is stored in _N.
 		_N -= 1; 
+
+		A += (1 / (N - _N));
 
 		// Add one to the value which is stored in i.
 		i += 1; 
 	}
 
-	// Return the value which A represents.
+	// Return the value which is stored in A.
 	return A;
 }
 
