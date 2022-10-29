@@ -32,14 +32,13 @@ int e(int N)
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to zero.
 	// Otherwise, set _N to zero (and set N to _N).
 	_N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
-	//N = _N;
+	N = _N;
 
 	while (i <= N) 
 	{
-		//A += (1 / (N - _N));
 
 		// Subtract one from the value which is stored in _N.
-		//_N -= 1; 
+		_N -= 1; 
 
 		// Add one to the value which is stored in i.
 		i += 1; 
