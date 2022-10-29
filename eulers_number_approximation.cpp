@@ -93,6 +93,12 @@ int main()
 	// Set the intial value which is stored in N to zero.
 	int N = 0;
 
+    // Set the number of digits of floating-point numbers which are printed to the command line terminal to 100 digits.
+    std::cout.precision(100);
+
+    // Set the number of digits of floating-point numbers which are printed to the file output stream to 100 digits.
+    file.precision(100);
+
 	/**
 	 * If the file named eulers_number_approximation_output.txt does not already exist inside of the same 
 	 * file directory as does the file named eulers_number_approximation.cpp, 
