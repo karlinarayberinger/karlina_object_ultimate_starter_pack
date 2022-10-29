@@ -88,7 +88,7 @@ long double e(int N, std::ostream & output)
 	output << "\n\nnumber_of_bytes(unsigned long long int) := " << sizeof(unsigned long long int) << ".";
 
 	// Print "memory_address_of(T) := {memory_address_of(T)}." to the output stream.
-	output << "\n\nmemory_address_of(T) := &T = " << &T << ".// & is a reference operator";
+	output << "\n\nmemory_address_of(T) = &T = " << &T << ".// & is a reference operator";
 
 	// Print "T := {T}." to the output stream.
 	output << "\n\nT := " << T << ". // pointer to unsigned long long int type variable";
@@ -232,11 +232,11 @@ int main()
 	// Print "number_of_bytes(int) := {sizeof(int)}." to the file output stream.
 	file << "\n\nnumber_of_bytes(int) := " << sizeof(int) << ".";
 
-	// Print "memory_address_of(N) := {memory_address_of(N)}." to the command line terminal.
-	std::cout << "\n\nmemory_address_of(N) := &N = " << &N << ". // & is a reference operator";
+	// Print "memory_address_of(A) := {memory_address_of(A)}." to the command line terminal.
+	std::cout << "\n\nmemory_address_of(N) = &N = " << &N << ". // & is a reference operator";
 
 	// Print "memory_address_of(N):= {N}." to the file output stream.
-	file << "\n\nmemory_address_of(N) := &N = " << &N << ". // & is a reference operator";
+	file << "\n\nmemory_address_of(N) = &N = " << &N << ". // & is a reference operator";
 
 	// Print "number_of_bytes(long double) := {sizeof(long double)}." to the command line terminal.
 	std::cout << "\n\nnumber_of_bytes(long double) := " << sizeof(long double) << ".";
@@ -251,10 +251,10 @@ int main()
 	file << "\n\nA := " << A << ". // long double type variable";
 
 	// Print "memory_address_of(A) := {memory_address_of(A)}." to the command line terminal.
-	std::cout << "\n\nmemory_address_of(A) := " << &A << ".";
+	std::cout << "\n\nmemory_address_of(A) = &A = " << &A << ". // & is a reference operator";
 
 	// Print "memory_address_of(A):= {A}." to the file output stream.
-	file << "\n\nmemory_address_of(N) := " << &A << ".";
+	file << "\n\nmemory_address_of(N) = &A = " << &A << ". // & is a reference operator";
 
 
 	// Compute the Nth approximation of Euler's Number and store the result in A.
