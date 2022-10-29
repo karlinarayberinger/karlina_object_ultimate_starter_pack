@@ -12,6 +12,18 @@
 #include <fstream> // file input and output
 #define MAXIMUM_N 1000 // constant which represents maximum N value
 
+/* function prototypes */
+int e(int N, std::ostream & output);
+
+/**
+ * Generate an approximation of the the mathematical constant named e (i.e. Euler’s Number) 
+ * by adding (1/N) to (1/(N – 1)) to (1/(N – 2)) to … (1/(N – (N – 1)) such that N is a natural number.
+ */
+int e(int N)
+{
+	return 0;
+}
+
 /* program entry point */
 int main()
 {
@@ -74,6 +86,12 @@ int main()
 
 	// Print "memory_address_of(N):= {N}." to the file output stream.
 	file << "\n\nmemory_address_of(N) := " << &N << ".";
+
+	// Print "e(N) := {e(N)}." to the command line terminal.
+	std::cout << "\n\ne(N) := " << e(N) << ".";
+
+	// Print "e(N) := {e(N)}." to the file output stream.
+	file << "\n\ne(N) := " << e(N) << ".";
 
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";

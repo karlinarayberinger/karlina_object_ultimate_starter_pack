@@ -4,11 +4,13 @@ START OF PROGRAM
 
 Enter a nonnegative integer which is no larger than 1000: 
 
-The value which was entered to store inside of the int type variable named N is 777.
+The value which was entered to store inside of the int type variable named N is 888.
 
-N := 777.
+N := 888.
 
-memory_address_of(N) := 0x7ffca08d839c.
+memory_address_of(N) := 0x7ffd14ba140c.
+
+e(N) := 0.
 
 --------------------------------
 END OF PROGRAM
