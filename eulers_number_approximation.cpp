@@ -101,7 +101,7 @@ long double e(int N, std::ostream & output)
 	for (i = 0; i < N; i += 1) 
 	{
 		// Print "T[{i}] := {memory_address_of(T[i])}." to the output stream.
-		output << "\nT[" << i << "] := " << &T[i] << ".";
+		output << "\nT[" << i << "] := " << &T[i] << ". // memory address of T[" << i << "]";
 	}
 
 	// Print a newline character to the output stream.
