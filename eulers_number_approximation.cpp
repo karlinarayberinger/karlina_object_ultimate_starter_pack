@@ -91,7 +91,7 @@ long double e(int N, std::ostream & output)
 	output << "\n\nmemory_address_of(T) := " << &T << ".";
 
 	// Print "T := {T}." to the output stream.
-	output << "\n\nT := " << T << ". // pointer to unsigned long long int type variable \n";
+	output << "\n\nT := " << T << ". // pointer to unsigned long long int type variable";
 
 	// Print "*T := {*T}." to the output stream.
 	output << "\n\n*T := " << *T << ". // dereferenced pointer to unsigned long long int type variable \n";
