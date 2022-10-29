@@ -33,14 +33,17 @@ long double e(int N, std::ostream & output)
 	// Set the intial value which is stored in i to zero.
 	int _N = 0, i = 0;
 
-	int * terms;
+	// Declare a pointer to an int type variable named T.
+	int * T;
 
-	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to zero.
+	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to one.
 	// Otherwise, set _N to zero (and set N to _N).
-	_N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+	_N = ((N < 0) || (N > MAXIMUM_N)) ? 1 : N;
 	N = _N;
 
-	terms = new int [N];
+	// Allocate N contiguous int sized chunks of memory to an array for storing N integer values.
+	// Store the memory address of the first element of that array in T.
+	T = new int [N];
 
 	output << "\n\nA := ";
 
@@ -53,7 +56,8 @@ long double e(int N, std::ostream & output)
 		i += 1; 
 	}
 
-	delete [] terms;
+	// De-allocate memory which was assigned to the array named T.
+	delete [] T;
 
 	// Return the value which is stored in A.
 	return A;
