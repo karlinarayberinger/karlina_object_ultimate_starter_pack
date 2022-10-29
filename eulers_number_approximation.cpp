@@ -13,21 +13,25 @@
 #define MAXIMUM_N 1000 // constant which represents maximum N value
 
 /* function prototypes */
-int e(int N, std::ostream & output);
+long double e(int N, std::ostream & output);
 
 /**
  * Generate an approximation of the the mathematical constant named e (i.e. Euler’s Number) 
  * by adding (1/N) to (1/(N – 1)) to (1/(N – 2)) to … (1/(N – (N – 1)) such that N is a natural number.
+ * 
+ * The value returned by this function is a double-precision floating type value.
  */
-int e(int N)
+long double e(int N)
 {
-	// Declare an int type variable (i.e. a variable for storing integer values) named A. 
+	// Declare a long double type variable (i.e. a variable for storing floating-point number values) named A. 
 	// Set the intial value which is stored in A to zero.
+	long double A = 0.0;
+
 	// Declare an int type variable (i.e. a variable for storing integer values) named _N. 
 	// Set the intial value which is stored in _N to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored in i to zero.
-	int A = 0, _N = 0, i = 0;
+	int _N = 0, i = 0;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to zero.
 	// Otherwise, set _N to zero (and set N to _N).
