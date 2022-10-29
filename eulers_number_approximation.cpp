@@ -60,18 +60,16 @@ long double e(int N, std::ostream & output)
 		output << "\nT[" << i << "] := " << &T[i] << ".";
 	}
 
+	// Print a newline character to the output stream.
+	output << '\n';
+
 	// For each integer value represented by i starting at 0 and ending at N in and in ascending order:
 	// set value of the ith element of the int type array represented by T to absolute_value_of(i - N) and
 	// print the data value which is stored in the ith element of the array to the output stream.
 	for (i = 0; i < N; i += 1) 
 	{
-		// Store the value of (1 / (N - _N) in T[i].
-		T[i] = (double) (1 / (N - (N - _N)));
-
 		// Print "T[{i}] := {T[i]}." to the output stream.
-		output << "\n\nT[" << i << "] := " << T[i];
-		output << "\n = " << "1 / (N - " << _N << ")";
-		output << "\n = 1 / (" << N << " - (" << N << " - " << _N << ")).";
+		output << "\nT[" << i << "] := " << T[i];
 
 		// Subtract one from the value which is stored in _N.
 		_N -= 1; 
