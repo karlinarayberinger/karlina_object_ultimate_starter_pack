@@ -4,11 +4,11 @@ START OF PROGRAM
 
 Enter a nonnegative integer which is no larger than 1000: 
 
-The value which was entered to store inside of the int type variable named N is 333.
+The value which was entered to store inside of the int type variable named N is 666.
 
-N := 333.
+N := 666.
 
-memory_address_of(N) := 0x7fffbf7a6e8c.
+memory_address_of(N) := 0x7fff9f35648c.
 
 e(N) := 0.
 

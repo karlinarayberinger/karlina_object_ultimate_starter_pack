@@ -23,12 +23,23 @@ int e(int N)
 {
 	// Declare an int type variable (i.e. a variable for storing integer values) named A. 
 	// Set the intial value which is stored inside of A to zero.
+	// Declare an int type variable (i.e. a variable for storing integer values) named _N. 
+	// Set the intial value which is stored inside of _N to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored inside of i to zero.
-	int A = 0, i = 0;
+	int A = 0, _N = 0, i = 0;
 
-	// If N is smaller than zero or if N is larger than MAXIMUM_N, set N to zero.
-	N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to zero.
+	// Otherwise, set _N to N.
+	_N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+
+	while (i <= N) 
+	{
+		A += (1 / (N - 1));
+
+		// Add one to the value which is stored in i.
+		i += 1; 
+	}
 
 	// Return the value which A represents.
 	return A;
