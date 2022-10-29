@@ -27,30 +27,33 @@ long double e(int N, std::ostream & output)
 	// Set the intial value which is stored in A to zero.
 	long double A = 0.0;
 
-	// Declare an int type variable (i.e. a variable for storing integer values) named term. 
-	// Set the intial value which is stored in term to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named _N. 
 	// Set the intial value which is stored in _N to zero.
 	// Declare an int type variable (i.e. a variable for storing integer values) named i. 
 	// Set the intial value which is stored in i to zero.
-	int term = 0, _N = 0, i = 0;
+	int _N = 0, i = 0;
+
+	int * terms;
 
 	// If N is smaller than zero or if N is larger than MAXIMUM_N, set _N to zero.
 	// Otherwise, set _N to zero (and set N to _N).
 	_N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
 	N = _N;
 
+	terms = new int [N];
+
+	output << "\n\nA := ";
+
 	while (i <= N) 
 	{
 		// Subtract one from the value which is stored in _N.
 		_N -= 1; 
 
-		term = 1 / (N - _N);
-
-
 		// Add one to the value which is stored in i.
 		i += 1; 
 	}
+
+	delete [] terms;
 
 	// Return the value which is stored in A.
 	return A;
@@ -120,10 +123,10 @@ int main()
 	file << "\n\nmemory_address_of(N) := " << &N << ".";
 
 	// Print "e(N) := {e(N)}." to the command line terminal.
-	std::cout << "\n\ne(N) := " << e(N,file) << ".";
+	std::cout << "\n\ne(N) := " << e(N, std::cout) << ".";
 
 	// Print "e(N) := {e(N)}." to the file output stream.
-	file << "\n\ne(N) := " << e(N,file) << ".";
+	file << "\n\ne(N) := " << e(N, file) << ".";
 
 	// Print a closing message to the command line terminal.
 	std::cout << "\n\n--------------------------------";
