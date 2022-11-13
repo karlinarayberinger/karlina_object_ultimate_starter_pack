@@ -2,7 +2,7 @@
  * file: sound_track_looper.js
  * type: JavaScript
  * author: Karlina Ray Beringer
- * date: 17_AUGUST_2022
+ * date: 12_NOVEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
@@ -48,7 +48,7 @@ function get_selected_menu_option_value(select_menu_identifier) {
 }
 
 /**
- * Assume that this funciton is called whenever the web page file is opened or refreshed by the web browser.
+ * Assume that this function is called whenever the web page file is opened or refreshed by the web browser.
  * Display a time-stamped message which indicates the time at which the web page was opened as green text at the bottom of the page.
  * Set the cyan span text which represents seconds elapsed to the value 0.
  * Set the cyan span text which represents loops completed to the value 0.
