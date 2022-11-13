@@ -24,6 +24,7 @@ function generate_time_stamp() {
 function get_menu_options() {
 	let HTML_string = ('<' + 'option value="frogs_croaking_24_august_2021.mp3" selected' + '>' + 'frogs_croaking_24_august_2021.mp3' + '<' + '/' + 'option' + '>');
 	HTML_string += ('<' + 'option value="drumz_karbytes_10_july_2022.mp3"' + '>' + 'drumz_karbytes_10_july_2022.mp3' + '<' + '/' + 'option' + '>');
+	HTML_string += ('<' + 'option value="drumz_karbytes_12_november_2022.mp3"' + '>' + 'drumz_karbytes_12_november_2022.mp3' + '<' + '/' + 'option' + '>');
 	return HTML_string;
 }
 
